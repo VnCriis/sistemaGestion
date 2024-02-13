@@ -2,9 +2,9 @@ import java.sql.*;
 
 public class connector {
     // Datos de conexión a la base de datos
-    private static final String URL = "jdbc:mysql://localhost:3306/sistemaGestion";
-    private static final String USUARIO = "root";
-    private static final String CONTRASEÑA = "";
+    private static final String dbhost = "jdbc:mysql://localhost:3306/sistemaGestion";
+    private static final String dbuser = "root";
+    private static final String dbpassword = "";
 
     // Método para obtener la conexión a la base de datos
     public static Connection obtenerConexion() {
@@ -13,7 +13,7 @@ public class connector {
             // Registro del driver JDBC
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Establecer conexión
-            conexion = DriverManager.getConnection(URL, USUARIO, CONTRASEÑA);
+            conexion = DriverManager.getConnection(dbhost, dbuser, dbpassword);
             System.out.println("Conexión exitosa a la base de datos.");
         } catch (ClassNotFoundException e) {
             System.out.println("Error al cargar el driver JDBC.");

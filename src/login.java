@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ContainerEvent;
-import java.sql.Connection;
+import java.sql.*;
 
 public class login {
     private JTextField textField4;
@@ -16,26 +16,67 @@ public class login {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String opcionSeleccionada = (String) comboBox1.getSelectedItem(); // Corrección: Utiliza getSelectedItem()
+                String nombre = textField4.getText();
+                int contraseña = Integer.parseInt(passwordField1.getText());
+                String opcionSeleccionada = (String) comboBox1.getSelectedItem();
                 if (opcionSeleccionada != null) {
+                    Connection conexion = connector.obtenerConexion();
                     switch (opcionSeleccionada) {
                         case "Estudiante":
-                            JFrame estudiante = new JFrame("");
-                            estudiante.setContentPane(new estudiante().estudianteJPanel);
-                            estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            estudiante.pack();
-                            estudiante.setSize(850,420);
-                            estudiante.setVisible(true);
+                            try {
+                                String sql = "SELECT * FROM estudiantes WHERE usuario = ? AND contraseña = ?";
+                                PreparedStatement statement = conexion.prepareStatement(sql);
+                                statement.setString(1,nombre);
+                                statement.setString(2, String.valueOf(contraseña));
+                                ResultSet resultSet = statement.executeQuery();
+                                if (resultSet.next()) {
+                                    JFrame estudiante = new JFrame("");
+                                    estudiante.setContentPane(new estudiante().estudianteJPanel);
+                                    estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                    estudiante.pack();
+                                    estudiante.setSize(850, 420);
+                                    estudiante.setVisible(true);
+                                    ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
+                                }else{
+                                    JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
+                                }
+                                resultSet.close();
+                                statement.close();
+                                conexion.close();
+                            }
+                            catch (SQLException exception){
+                                JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
+                            }
                             break;
                         case "Tutor":
-                            JFrame tutor = new JFrame("");
-                            tutor.setContentPane(new tutor().tutorJPanel);
-                            tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                            tutor.pack();
-                            tutor.setSize(850,420);
-                            tutor.setVisible(true);
+                            try {
+                                String sql = "SELECT * FROM tutores WHERE usuario = ? AND contraseña = ?";
+                                PreparedStatement statement = conexion.prepareStatement(sql);
+                                statement.setString(1,nombre);
+                                statement.setString(2, String.valueOf(contraseña));
+                                ResultSet resultSet = statement.executeQuery();
+                                if (resultSet.next()) {
+                                    JFrame tutor = new JFrame("");
+                                    tutor.setContentPane(new tutor().tutorJPanel);
+                                    tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                    tutor.pack();
+                                    tutor.setSize(850, 420);
+                                    tutor.setVisible(true);
+                                    ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
+                                }
+                                else{
+                                    JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
+                                }
+                                resultSet.close();
+                                statement.close();
+                                conexion.close();
+                            }
+                            catch (SQLException exception){
+                                JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
+                            }
                             break;
                     }
+                    connector.cerrarConexion(conexion);
                 }
             }
 
