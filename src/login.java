@@ -12,6 +12,7 @@ public class login {
     private JComboBox comboBox1;
     JPanel loginJPanel;
 
+
     public login() {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
@@ -34,7 +35,7 @@ public class login {
                                     estudiante.setContentPane(new estudiante().estudianteJPanel);
                                     estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                                     estudiante.pack();
-                                    estudiante.setSize(850, 420);
+                                    estudiante.setSize(843, 721);
                                     estudiante.setVisible(true);
                                     ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                                 }else{
@@ -60,7 +61,7 @@ public class login {
                                     tutor.setContentPane(new tutor().tutorJPanel);
                                     tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                                     tutor.pack();
-                                    tutor.setSize(850, 420);
+                                    tutor.setSize(843,721);
                                     tutor.setVisible(true);
                                     ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                                 }
