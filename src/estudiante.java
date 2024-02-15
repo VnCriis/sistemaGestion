@@ -9,12 +9,51 @@ public class estudiante {
     JPanel estudianteJPanel;
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
-    private JRadioButton radioButton3;
-    private JRadioButton radioButton4;
-    private JTextArea textArea1;
-    private JTextArea textArea2;
-    private JTextArea textArea3;
-    private JTextArea textArea4;
+
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JButton button1;
+
+    public estudiante(JTextField textField1, JTextField textField2, JTextField textField3, JTextField textField4) {
+        this.textField1 = textField1;
+        this.textField2 = textField2;
+        this.textField3 = textField3;
+        this.textField4 = textField4;
+    }
+
+    public JTextField getTextField1() {
+        return textField1;
+    }
+
+    public void setTextField1(JTextField textField1) {
+        this.textField1 = textField1;
+    }
+
+    public JTextField getTextField2() {
+        return textField2;
+    }
+
+    public void setTextField2(JTextField textField2) {
+        this.textField2 = textField2;
+    }
+
+    public JTextField getTextField3() {
+        return textField3;
+    }
+
+    public void setTextField3(JTextField textField3) {
+        this.textField3 = textField3;
+    }
+
+    public JTextField getTextField4() {
+        return textField4;
+    }
+
+    public void setTextField4(JTextField textField4) {
+        this.textField4 = textField4;
+    }
 
     public estudiante() {
         radioButton1.addActionListener(new ActionListener() {
@@ -41,30 +80,7 @@ public class estudiante {
                 ((JFrame) SwingUtilities.getWindowAncestor(radioButton2)).dispose();
             }
         });
-        radioButton3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame estudianteFormularios = new JFrame("");
-                estudianteFormularios.setContentPane(new estudianteFormularios().formulariosJPanel);
-                estudianteFormularios.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                estudianteFormularios.pack();
-                estudianteFormularios.setSize(843,721);
-                estudianteFormularios.setVisible(true);
-                ((JFrame) SwingUtilities.getWindowAncestor(radioButton3)).dispose();
-            }
-        });
-        radioButton4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame estudianteInicio = new JFrame("");
-                estudianteInicio.setContentPane(new estudianteInicio().inicioJPanel);
-                estudianteInicio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                estudianteInicio.pack();
-                estudianteInicio.setSize(843,721);
-                estudianteInicio.setVisible(true);
-                ((JFrame) SwingUtilities.getWindowAncestor(radioButton4)).dispose();
-            }
-        });
+
         try {
             Connection conexion = connector.obtenerConexion();
             String query = "SELECT * FROM listaestudiantes";
@@ -79,10 +95,10 @@ public class estudiante {
                 String facultad = resultSet.getString("facultad");
                 String carrera = resultSet.getString("carrera");
                 String periodo = resultSet.getString("periodo");
-                textArea1.append(nombre + "\n"); // Agrega un salto de línea después de cada nombre
-                textArea2.append(facultad + "\n"); // Agrega un salto de línea después de cada facultad
-                textArea3.append(carrera + "\n"); // Agrega un salto de línea después de cada carrera
-                textArea4.append(periodo + "\n");
+                textField1.setText(nombre); // Agrega un salto de línea después de cada nombre
+                textField2.setText(facultad); // Agrega un salto de línea después de cada facultad
+                textField3.setText(carrera); // Agrega un salto de línea después de cada carrera
+                textField4.setText(periodo);
             }
 
             resultSet.close();
@@ -92,5 +108,17 @@ public class estudiante {
             e.printStackTrace();
         }
 
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame login = new JFrame("");
+                login.setContentPane(new login().loginJPanel);
+                login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                login.pack();
+                login.setSize(843,721);
+                login.setVisible(true);
+                ((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
+            }
+        });
     }
 }
