@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         //ventana.setUndecorated(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setUndecorated(true);
         ventana.setContentPane(new login().loginJPanel);
         ventana.pack();
         ventana.setSize(854, 480);
@@ -15,5 +16,6 @@ public class Main {
         //login.pack();
         //login.setSize(843,721);
         //login.setVisible(true);
+
     }
 }
