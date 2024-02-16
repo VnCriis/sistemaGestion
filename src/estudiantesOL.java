@@ -37,5 +37,11 @@ public class estudiantesOL {
                 ((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
             }
         });
+        verMásButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 }
