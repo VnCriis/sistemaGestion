@@ -60,7 +60,7 @@ public class estudiante {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame estudianteOL = new JFrame("");
-                estudianteOL.setContentPane(new estudianteOL().olJPanel);
+                estudianteOL.setContentPane(new estudiantesOL().olJPanel);
                 estudianteOL.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 estudianteOL.pack();
                 estudianteOL.setSize(843,721);
