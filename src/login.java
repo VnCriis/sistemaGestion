@@ -14,6 +14,7 @@ public class login {
 
 
     public login() {
+        Main.ventana.setTitle("Gestion de Proyectos");
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -31,13 +32,15 @@ public class login {
                                 statement.setString(2, String.valueOf(contraseña));
                                 ResultSet resultSet = statement.executeQuery();
                                 if (resultSet.next()) {
-                                    JFrame estudiante = new JFrame("");
-                                    estudiante.setContentPane(new estudiante().estudianteJPanel);
-                                    estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                                    estudiante.pack();
-                                    estudiante.setSize(843, 721);
-                                    estudiante.setVisible(true);
-                                    ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
+                                    Main.ventana.setContentPane(new estudiante().estudianteJPanel);
+                                    Main.ventana.revalidate();
+                                    //JFrame estudiante = new JFrame("");
+                                    //estudiante.setContentPane(new estudiante().estudianteJPanel);
+                                    //estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                    //estudiante.pack();
+                                    //estudiante.setSize(843, 721);
+                                    //estudiante.setVisible(true);
+                                    //((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                                 }else{
                                     JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
                                 }
@@ -57,13 +60,15 @@ public class login {
                                 statement.setString(2, String.valueOf(contraseña));
                                 ResultSet resultSet = statement.executeQuery();
                                 if (resultSet.next()) {
-                                    JFrame tutor = new JFrame("");
-                                    tutor.setContentPane(new tutor().tutorJPanel);
-                                    tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                                    tutor.pack();
-                                    tutor.setSize(843,721);
-                                    tutor.setVisible(true);
-                                    ((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
+                                    Main.ventana.setContentPane(new tutor().tutorJPanel);
+                                    Main.ventana.revalidate();
+                                    //JFrame tutor = new JFrame("");
+                                    //tutor.setContentPane(new tutor().tutorJPanel);
+                                    //tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                    //tutor.pack();
+                                    //tutor.setSize(843,721);
+                                    //tutor.setVisible(true);
+                                    //((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                                 }
                                 else{
                                     JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");

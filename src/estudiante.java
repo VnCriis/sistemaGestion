@@ -56,28 +56,33 @@ public class estudiante {
     }
 
     public estudiante() {
+        Main.ventana.setTitle("Gestion De Proyectos");
         radioButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame estudianteOL = new JFrame("");
-                estudianteOL.setContentPane(new estudiantesOL().olJPanel);
-                estudianteOL.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                estudianteOL.pack();
-                estudianteOL.setSize(843,721);
-                estudianteOL.setVisible(true);
-                ((JFrame) SwingUtilities.getWindowAncestor(radioButton1)).dispose();
+                Main.ventana.setContentPane(new estudiantesOL().olJPanel);
+                Main.ventana.revalidate();
+                //JFrame estudianteOL = new JFrame("");
+                //estudianteOL.setContentPane(new estudiantesOL().olJPanel);
+                //estudianteOL.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                //estudianteOL.pack();
+                //estudianteOL.setSize(843,721);
+                //estudianteOL.setVisible(true);
+                //((JFrame) SwingUtilities.getWindowAncestor(radioButton1)).dispose();
             }
         });
         radioButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame estudianteOV = new JFrame("");
-                estudianteOV.setContentPane(new estudianteOV().ovJPanel);
-                estudianteOV.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                estudianteOV.pack();
-                estudianteOV.setSize(843,721);
-                estudianteOV.setVisible(true);
-                ((JFrame) SwingUtilities.getWindowAncestor(radioButton2)).dispose();
+                Main.ventana.setContentPane(new estudianteOV().ovJPanel);
+                Main.ventana.revalidate();
+                //JFrame estudianteOV = new JFrame("");
+                //estudianteOV.setContentPane(new estudianteOV().ovJPanel);
+                //estudianteOV.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                //estudianteOV.pack();
+                //estudianteOV.setSize(843,721);
+                //estudianteOV.setVisible(true);
+                //((JFrame) SwingUtilities.getWindowAncestor(radioButton2)).dispose();
             }
         });
 
@@ -111,13 +116,15 @@ public class estudiante {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame login = new JFrame("");
-                login.setContentPane(new login().loginJPanel);
-                login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                login.pack();
-                login.setSize(843,721);
-                login.setVisible(true);
-                ((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
+                Main.ventana.setContentPane(new login().loginJPanel);
+                Main.ventana.revalidate();
+                //JFrame login = new JFrame("");
+                //login.setContentPane(new login().loginJPanel);
+                //login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                //login.pack();
+                //login.setSize(843,721);
+                //login.setVisible(true);
+                //((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
             }
         });
     }

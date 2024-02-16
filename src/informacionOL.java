@@ -19,8 +19,10 @@ public class informacionOL {
     private JLabel beneficios;
     private JLabel beneficios_p;
     private JLabel icon;
+    JPanel JPanelOL;
 
     public informacionOL(String cambio){
+        Main.ventana.setTitle("Gestion De Proyectos");
         switch (cambio){
             case "primero" -> {
                 titulo.setText("Asistente De Sistemas");
@@ -32,8 +34,63 @@ public class informacionOL {
                 beneficios.setText("Beneficios");
                 beneficios_p.setText("todos los beneficios");
                 icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
-
             }
+            case "segundo" -> {
+                titulo.setText("Asistente De Sistemas casa");
+                subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
+                descripcion.setText("Descripcion");
+                parrafo_d.setText("Se busca pasante");
+                requisitos.setText("Requisitos");
+                requisitos_p.setText("Ayudante");
+                beneficios.setText("Beneficios");
+                beneficios_p.setText("todos los beneficios");
+                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+            }
+            case "tercero" -> {
+                titulo.setText("Asistente De Sistemas cs");
+                subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
+                descripcion.setText("Descripcion");
+                parrafo_d.setText("Se busca pasante");
+                requisitos.setText("Requisitos");
+                requisitos_p.setText("Ayudante");
+                beneficios.setText("Beneficios");
+                beneficios_p.setText("todos los beneficios");
+                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+            }
+            case "cuarta" -> {
+                titulo.setText("Asistente De Sistemas fg");
+                subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
+                descripcion.setText("Descripcion");
+                parrafo_d.setText("Se busca pasante");
+                requisitos.setText("Requisitos");
+                requisitos_p.setText("Ayudante");
+                beneficios.setText("Beneficios");
+                beneficios_p.setText("todos los beneficios");
+                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+            }
+            case "quinta" -> {
+                titulo.setText("Asistente De Sistemas c");
+                subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
+                descripcion.setText("Descripcion");
+                parrafo_d.setText("Se busca pasante");
+                requisitos.setText("Requisitos");
+                requisitos_p.setText("Ayudante");
+                beneficios.setText("Beneficios");
+                beneficios_p.setText("todos los beneficios");
+                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+            }
+            case "sexta" -> {
+                titulo.setText("Asistente De Sistemas cd");
+                subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
+                descripcion.setText("Descripcion");
+                parrafo_d.setText("Se busca pasante");
+                requisitos.setText("Requisitos");
+                requisitos_p.setText("Ayudante");
+                beneficios.setText("Beneficios");
+                beneficios_p.setText("todos los beneficios");
+                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+            }
+
         }
     };
 }

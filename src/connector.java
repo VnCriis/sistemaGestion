@@ -4,7 +4,7 @@ public class connector {
     // Datos de conexión a la base de datos
     private static final String dbhost = "jdbc:mysql://localhost:3306/sistemaGestion";
     private static final String dbuser = "root";
-    private static final String dbpassword = "";
+    private static final String dbpassword = "1726405390";
 
     // Método para obtener la conexión a la base de datos
     public static Connection obtenerConexion() {
