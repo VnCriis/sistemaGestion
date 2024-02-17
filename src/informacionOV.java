@@ -9,7 +9,7 @@ public class informacionOV {
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JButton aplicarButton;
+    private JButton aplicarAhoraButton;
     private JLabel icon;
     private JLabel titulo;
     private JLabel subtitulo;

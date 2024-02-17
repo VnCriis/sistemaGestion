@@ -9,7 +9,7 @@ public class informacionOL {
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
     private JButton button1;
-    private JButton aplicarButton;
+    private JButton aplicarAhoraButton;
     private JLabel titulo;
     private JLabel subtitulo;
     private JLabel descripcion;

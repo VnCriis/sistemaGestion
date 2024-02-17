@@ -53,6 +53,7 @@
                 </constraints>
                 <properties>
                   <background color="-9531996"/>
+                  <font name="Candara" size="14" style="1"/>
                   <text value="💼 Prácticas preprofesionales"/>
                 </properties>
               </component>
@@ -62,6 +63,7 @@
                 </constraints>
                 <properties>
                   <background color="-9531996"/>
+                  <font name="Candara" size="14" style="1"/>
                   <text value="🎟️ Prácticas Laborales"/>
                 </properties>
               </component>
@@ -71,6 +73,7 @@
                 </constraints>
                 <properties>
                   <background color="-9531996"/>
+                  <font name="Candara" size="14" style="1"/>
                   <text value="👤 Perfil"/>
                 </properties>
               </component>
@@ -105,6 +108,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <text value="Descripción"/>
                 </properties>
               </component>
@@ -131,6 +135,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <text value="Requisitos"/>
                 </properties>
               </component>
@@ -139,6 +144,7 @@
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <text value="Formación academica"/>
                 </properties>
               </component>
@@ -155,6 +161,7 @@
                   <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <text value="Conocimientos"/>
                 </properties>
               </component>
@@ -171,6 +178,7 @@
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <text value="Otros"/>
                 </properties>
               </component>
@@ -234,12 +242,13 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="a5b02" class="javax.swing.JButton" binding="aplicarButton" default-binding="true">
+              <component id="a5b02" class="javax.swing.JButton" binding="aplicarAhoraButton" default-binding="true">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Aplicar"/>
+                  <font name="Candara" size="16" style="1"/>
+                  <text value="Aplicar Ahora"/>
                 </properties>
               </component>
             </children>
@@ -269,6 +278,7 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <font name="Courier New" size="20" style="1"/>
               <foreground color="-16777216"/>
               <text value="ESTUDIANTE"/>
             </properties>
@@ -337,6 +347,7 @@
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <foreground color="-16777216"/>
                   <text value="Usuario:"/>
                 </properties>
@@ -386,6 +397,7 @@
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <foreground color="-16777216"/>
                   <text value="Facultad:"/>
                 </properties>
@@ -395,6 +407,7 @@
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <foreground color="-16777216"/>
                   <text value="Carrera:"/>
                 </properties>
@@ -404,6 +417,7 @@
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <font name="Candara" size="16" style="1"/>
                   <foreground color="-16777216"/>
                   <text value="Periódo:"/>
                 </properties>
