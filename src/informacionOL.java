@@ -27,6 +27,7 @@ public class informacionOL {
     private JLabel sueldo;
     private JLabel avance;
     private JLabel tiempo;
+    private JRadioButton perfilRadioButton;
 
     public informacionOL(String cambio){
         Main.ventana.setTitle("Gestion De Proyectos");

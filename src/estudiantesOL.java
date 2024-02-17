@@ -22,6 +22,7 @@ public class estudiantesOL {
     private JButton verMásButton6;
     private JButton verMásButton7;
     private JButton verMásButton8;
+    private JRadioButton perfilRadioButton;
     //private JButton button1;
 
     public estudiantesOL() {

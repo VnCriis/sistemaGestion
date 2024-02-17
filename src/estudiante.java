@@ -15,6 +15,7 @@ public class estudiante {
     private JTextField textField3;
     private JTextField textField4;
     private JButton button1;
+    private JRadioButton perfilRadioButton;
 
     public estudiante(JTextField textField1, JTextField textField2, JTextField textField3, JTextField textField4) {
         this.textField1 = textField1;
