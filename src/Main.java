@@ -15,7 +15,6 @@ public class Main {
         //login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //login.pack();
         //login.setSize(843,721);
-        //login.setVisible(true);
-
+        //login.setVisible(true)
     }
 }

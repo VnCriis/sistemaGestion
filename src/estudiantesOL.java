@@ -32,13 +32,7 @@ public class estudiantesOL {
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new estudiante().estudianteJPanel);
                 Main.ventana.revalidate();
-                //JFrame estudiante = new JFrame("");
-                //estudiante.setContentPane(new estudiante().estudianteJPanel);
-                //estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                //estudiante.pack();
-                //estudiante.setSize(843,721);
-                //estudiante.setVisible(true);
-                //((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
+
             }
         });
         verMásButton.addActionListener(new ActionListener() {
@@ -49,5 +43,61 @@ public class estudiantesOL {
             }
         });
 
+        verMásButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("segundo").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("tercero").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("cuarto").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("quinto").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("sexto").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("septimo").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("octava").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
+        verMásButton8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacionOL("novena").JPanelOL);
+                Main.ventana.revalidate();
+            }
+        });
     }
 }

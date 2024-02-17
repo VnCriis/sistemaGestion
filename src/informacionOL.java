@@ -66,7 +66,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Beneficios de ley & corporativos.");
-                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+                icon.setIcon(new ImageIcon("src/img/novacero.png"));
 
                 ubicacion.setText("Latacunga, Cotopaxi - Ecuador");
                 sueldo.setText("No especificado");
@@ -86,7 +86,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Seguro médico privado");
-                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+                icon.setIcon(new ImageIcon("src/img/banco_t.png"));
 
                 ubicacion.setText("Pichincha, Ecuador - Quito");
                 sueldo.setText("No especificado");
@@ -106,7 +106,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Beneficios Coorporativos.");
-                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+                icon.setIcon(new ImageIcon("src/img/coris_t.png"));
 
                 ubicacion.setText("Quito, Pichincha - Ecuador");
                 sueldo.setText("600");
@@ -126,7 +126,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Beneficios de ley.");
-                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+                icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
                 ubicacion.setText("Quito, Pichincha - Ecuador");
                 sueldo.setText("No especificado");
@@ -145,14 +145,70 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Beneficios de ley.");
-                icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
+                icon.setIcon(new ImageIcon("src/img/improve.png"));
 
                 ubicacion.setText("Quito, Pichincha - Ecuador");
                 sueldo.setText("No especificado");
                 avance.setText("Junior");
                 tiempo.setText("Full-time | Presencial ");
             }
+            case "septima" -> {
+                titulo.setText("Staff Software Engineer");
+                subtitulo.setText("STAFFING");
+                parrafo_d.setText("* Staff Software Engineer Estamos buscando un Staff Full-Stack Engineer experimentado " +
+                        "y creativo para unirse a nuestro creciente equipo " +
+                        "de servicios de integración y ayudar a llevar nuestra empresa al siguiente nivel..");
 
+                requisitos_p.setText("* Tecnologia en Desarrollo de Software");
+                //textConocimientoAd.setText("Conocimietnos Adicionales:");
+                conocimiento_p.setText("* Experiencia trabajando con Node.js, Typescript or JavaScript.." );
+
+                //beneficios.setText("Beneficios");
+                beneficios_p.setText("* Beneficios de ley.");
+                icon.setIcon(new ImageIcon("src/img/staffing_t.png"));
+
+                ubicacion.setText("Quito, Pichincha - Ecuador");
+                sueldo.setText("No especificado");
+                avance.setText("Semi senior");
+                tiempo.setText("Full-time | Presencial ");
+            }
+            case "octava" -> {
+                titulo.setText("Pasante Sistemas");
+                subtitulo.setText("PUNTONET");
+                parrafo_d.setText("* Dar apoyo al área de sistemas en base a los requerimientos " +
+                        "solicitados por los clientes internos..");
+
+                requisitos_p.setText("* Tecnologia en Telecomunicaciones");
+                //textConocimientoAd.setText("Conocimietnos Adicionales:");
+                conocimiento_p.setText("* Apoyo Levantamiento Documentación e implementación de Servicios para Arquitectura de Software.." );
+
+                //beneficios.setText("Beneficios");
+                beneficios_p.setText("* Beneficios de ley.");
+                icon.setIcon(new ImageIcon("src/img/puntonet_t.png"));
+
+                ubicacion.setText("Quito, Pichincha - Ecuador");
+                sueldo.setText("500");
+                avance.setText("Junior");
+                tiempo.setText("Intern | Presencial ");
+            }
+            case "novena" -> {
+                titulo.setText("Centric - Passante de Sistemas");
+                subtitulo.setText("CASABACA S.A.");
+                parrafo_d.setText("* Apoyar en los procesos operativos del área.");
+                requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
+                //textConocimientoAd.setText("Conocimietnos Adicionales:");
+                conocimiento_p.setText("* Instalación y mantenimiento de diversos periféricos, así como instalación de " +
+                        "actualizaciones y parches correspondientes.." );
+
+                //beneficios.setText("Beneficios");
+                beneficios_p.setText("* Beneficios de ley.");
+                icon.setIcon(new ImageIcon("src/img/centric_t.png"));
+
+                ubicacion.setText("Quito, Pichincha - Ecuador");
+                sueldo.setText("No especificado");
+                avance.setText("Junior");
+                tiempo.setText("Intern | Presencial");
+            }
         }
     };
 }
