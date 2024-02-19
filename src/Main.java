@@ -10,6 +10,7 @@ public class Main {
         ventana.pack();
         ventana.setSize(1000, 800);
         ventana.setVisible(true);
+
         //JFrame login = new JFrame("");
         //login.setContentPane(new login().loginJPanel);
         //login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
