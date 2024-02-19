@@ -9,18 +9,18 @@ public class estudianteOV {
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JButton verMásButton1;
-    private JButton verMásButton2;
-    private JButton verMásButton3;
-    private JButton verMásButton4;
-    private JButton verMásButton5;
-    private JButton verMásButton6;
-    private JButton verMásButton7;
-    private JButton verMásButton8;
-    private JButton verMásButton9;
     private JRadioButton prácticasPreprofesionalesRadioButton;
     private JRadioButton a️PrácticasLaboralesRadioButton;
     private JRadioButton perfilRadioButton;
+    private JButton verMasButton1;
+    private JButton verMasButton2;
+    private JButton verMasButton3;
+    private JButton verMasButton4;
+    private JButton verMasButton5;
+    private JButton verMasButton6;
+    private JButton verMasButton7;
+    private JButton verMasButton8;
+    private JButton verMasButton9;
 
     public estudianteOV() {
         Main.ventana.setTitle("Gestion De Proyectos");
@@ -31,63 +31,63 @@ public class estudianteOV {
                 Main.ventana.revalidate();
             }
         });
-        verMásButton1.addActionListener(new ActionListener() {
+        verMasButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("primero").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton2.addActionListener(new ActionListener() {
+        verMasButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("segundo").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton3.addActionListener(new ActionListener() {
+        verMasButton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("tercero").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton4.addActionListener(new ActionListener() {
+        verMasButton4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("cuarta").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton5.addActionListener(new ActionListener() {
+        verMasButton5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("quinta").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton6.addActionListener(new ActionListener() {
+        verMasButton6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("sexta").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton7.addActionListener(new ActionListener() {
+        verMasButton7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("septimo").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton8.addActionListener(new ActionListener() {
+        verMasButton8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("octavo").JPanelOV);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton9.addActionListener(new ActionListener() {
+        verMasButton9.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOV("noveno").JPanelOV);

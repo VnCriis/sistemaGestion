@@ -252,7 +252,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="81c75" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="81c75" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints/>
             <properties/>
@@ -300,441 +300,559 @@
                   </component>
                 </children>
               </grid>
-              <vspacer id="1ddba">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                </constraints>
-              </vspacer>
-              <vspacer id="91a0a">
-                <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                </constraints>
-              </vspacer>
               <scrollpane id="ba877">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties/>
                 <border type="empty"/>
                 <children>
-                  <grid id="36047" layout-manager="GridLayoutManager" row-count="20" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                    <margin top="20" left="0" bottom="0" right="20"/>
+                  <grid id="36047" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="20" left="0" bottom="20" right="0"/>
                     <constraints/>
                     <properties/>
                     <border type="empty"/>
                     <children>
-                      <component id="d5770" class="javax.swing.JLabel">
+                      <grid id="98c9a" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Desarrollador Jr"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="e4a89" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="d5770" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Desarrollador Jr"/>
+                            </properties>
+                          </component>
+                          <component id="e4a89" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/crediprime.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="3a74" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="9226f" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="59d0b" class="javax.swing.JButton" binding="verMasButton1">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="952d9" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <icon value="img/crediprime.png"/>
-                          <text value=""/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <vspacer id="aaf20">
+                        <border type="none"/>
+                        <children>
+                          <component id="caddf" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Analista de desarrollo"/>
+                            </properties>
+                          </component>
+                          <component id="4187c" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/originasa.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="4f7ef" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="1244a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="f2c48" class="javax.swing.JButton" binding="verMasButton2">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="5ae97" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="76d64" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="63533" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="d4140" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Practicante de Ciencia de Datos"/>
+                            </properties>
+                          </component>
+                          <component id="78da9" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/omarsa.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="56728" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="4449d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="a5149" class="javax.swing.JButton" binding="verMasButton3">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="5787b" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <text value="Publicado"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="5a6cf" class="javax.swing.JButton" binding="verMásButton1">
+                        <border type="none"/>
+                        <children>
+                          <component id="49ff5" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value=" Ciberseguridad"/>
+                            </properties>
+                          </component>
+                          <component id="aa059" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/staff.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="c8d41" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="3f611" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="7d77d" class="javax.swing.JButton" binding="verMasButton4">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="b6d8e" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="caddf" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="11d30" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Desarrollo de Software"/>
+                            </properties>
+                          </component>
+                          <component id="db009" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/metel.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="42d0a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="1f638" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="97b7d" class="javax.swing.JButton" binding="verMasButton5">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="d5528" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Analista de desarrollo"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="4187c" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="35d54" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Testing de Software"/>
+                            </properties>
+                          </component>
+                          <component id="722e8" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/handtree.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="6ea7b" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="2a2de" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="4e839" class="javax.swing.JButton" binding="verMasButton6">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="6448" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <icon value="img/originasa.png"/>
-                          <text value=""/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="f3350" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="12a4d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value=" Base de Datos"/>
+                            </properties>
+                          </component>
+                          <component id="cdb04" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/puntonet_t.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="2d0e8" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="a5833" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="b0ade" class="javax.swing.JButton" binding="verMasButton7">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="b8b13" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="16399" class="javax.swing.JLabel">
+                        <border type="none"/>
+                        <children>
+                          <component id="457d7" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Redes y Seguridad Informática"/>
+                            </properties>
+                          </component>
+                          <component id="20371" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/qualityUp.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="b5a0a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="fd746" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="8ab0" class="javax.swing.JButton" binding="verMasButton8">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="85523" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
-                          <text value="Pubicado"/>
+                          <background color="-2500135"/>
                         </properties>
-                      </component>
-                      <component id="13558" class="javax.swing.JButton" binding="verMásButton2">
-                        <constraints>
-                          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="d4140" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Practicante de Ciencia de Datos"/>
-                        </properties>
-                      </component>
-                      <component id="78da9" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/omarsa.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="753ae" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="7aeb7" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="e8142" class="javax.swing.JButton" binding="verMásButton3">
-                        <constraints>
-                          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <vspacer id="71a66">
-                        <constraints>
-                          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="16feb" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Practicante de Ciberseguridad"/>
-                        </properties>
-                      </component>
-                      <component id="1a09d" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/staff.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <vspacer id="1129f">
-                        <constraints>
-                          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="48a3" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="f705e" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="9bb3c" class="javax.swing.JButton" binding="verMásButton4">
-                        <constraints>
-                          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="e2941" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Practicante de Desarrollo de Software"/>
-                        </properties>
-                      </component>
-                      <component id="e2f3" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/metel.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="8cbf8" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="69a2d" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="b0882" class="javax.swing.JButton" binding="verMásButton5">
-                        <constraints>
-                          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="a3f54" class="javax.swing.JButton" binding="verMásButton6">
-                        <constraints>
-                          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="9c515" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="4d075" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="9b4f5" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/handtree.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="f04ed" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Practicante de Testing de Software"/>
-                        </properties>
-                      </component>
-                      <vspacer id="1e347">
-                        <constraints>
-                          <grid row="13" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="4fb17" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Practicante de Base de Datos"/>
-                        </properties>
-                      </component>
-                      <component id="99f3" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/puntonet_t.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="33506" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="94e5c" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="68bf" class="javax.swing.JButton" binding="verMásButton7">
-                        <constraints>
-                          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <vspacer id="956d0">
-                        <constraints>
-                          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                      </vspacer>
-                      <component id="c4f55" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Redes y Seguridad Informática"/>
-                        </properties>
-                      </component>
-                      <component id="6c4d7" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/qualityUp.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="32f2" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="2d19a" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="5104a" class="javax.swing.JButton" binding="verMásButton8">
-                        <constraints>
-                          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="d7b57" class="javax.swing.JButton" binding="verMásButton9">
-                        <constraints>
-                          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Eras Demi ITC" size="14"/>
-                          <text value="Ver más"/>
-                        </properties>
-                      </component>
-                      <component id="464b8" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Publicado"/>
-                        </properties>
-                      </component>
-                      <component id="54129" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <text value="Quito-Pichincha, Ecuador"/>
-                        </properties>
-                      </component>
-                      <component id="1d063" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <icon value="img/humanbrand.png"/>
-                          <text value=""/>
-                        </properties>
-                      </component>
-                      <component id="de25b" class="javax.swing.JLabel">
-                        <constraints>
-                          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                        </constraints>
-                        <properties>
-                          <font name="Dubai Medium" size="18" style="0"/>
-                          <text value="Innovación y Emprendimiento Digital"/>
-                        </properties>
-                      </component>
+                        <border type="none"/>
+                        <children>
+                          <component id="82453" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <font name="Dubai Medium" size="18" style="0"/>
+                              <foreground color="-16777216"/>
+                              <text value="Innovación y Emprendimiento Digital"/>
+                            </properties>
+                          </component>
+                          <component id="11fdf" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <icon value="img/humanbrand.png"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="20364" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="📍Quito-Pichincha, Ecuador"/>
+                            </properties>
+                          </component>
+                          <component id="4df14" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-16777216"/>
+                              <text value="🗓️Publicado"/>
+                            </properties>
+                          </component>
+                          <component id="9990" class="javax.swing.JButton" binding="verMasButton9">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <background color="-15850944"/>
+                              <font name="Eras Demi ITC" size="14"/>
+                              <foreground color="-1"/>
+                              <text value="Ver más"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
                     </children>
                   </grid>
                 </children>
