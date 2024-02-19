@@ -19,7 +19,7 @@ public class informacionOV {
     private JLabel parrafo_d;
     private JLabel requisitos_p;
     private JLabel textConocimientoAd;
-    private JLabel conocimiento_p;
+    private JList conocimiento_p;
     private JLabel beneficios;
     private JLabel beneficios_p;
     private JLabel ubicacion;
@@ -39,10 +39,13 @@ public class informacionOV {
                 //requisitos.setText("Requisitos");
                 //textFormacionA.setText("Formacion Academica:");
                 requisitos_p.setText("* Título de tercer nivel en Ingeniería en Software, Programación  o afines");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("*  Infraestructura Backend y Frontend. · C#, Angular, TypeScript,"+" JavaScript, html, CSS · Manejo de base de datos, SQL Server" );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Infraestructura Backend y Frontend.");
+                contenedor.addElement("* C#, Angular, TypeScript");
+                contenedor.addElement("* JavaScript, html, CSS");
+                contenedor.addElement("* Manejo de base de datos, SQL Server");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Beneficios de salud y días libres");
                 icon.setIcon(new ImageIcon("src/img/crediprime.png"));
 
@@ -54,15 +57,16 @@ public class informacionOV {
             case "segundo" -> {
                 titulo.setText("ANALISTA DE DESARROLLO");
                 subtitulo.setText("ORIGINARSA S.A");
-                //descripcion.setText("Descripcion del puesto");
                 parrafo_d.setText("* Evaluación y mejora de procesos relacionados con el desarrollo \nde software. ");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
                 requisitos_p.setText("*  Tecnología, Sistemas y Telecomunicaciones");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Gestión en bases de datos, Infraestructura básica, \nProcedimientos almacenados, \nvistas, funciones, Jobs, y triggers, Arquitectura de software (API Rest y MVC),\n Generación y administración API'S.");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Gestión en bases de datos, Infraestructura básica.");
+                contenedor.addElement("* Procedimientos almacenados");
+                contenedor.addElement("* Vistas, funciones, Jobs, y triggers");
+                contenedor.addElement("* Arquitectura de software (API Rest y MVC)");
+                contenedor.addElement("* Generación y administración API'S");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
                 beneficios_p.setText("* Seguro médico y de vida");
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
@@ -77,7 +81,11 @@ public class informacionOV {
                 parrafo_d.setText("Participación en proyectos de ciencia de datos, analítica y aprendizaje\n automático. Oportunidad de aprender Python, R y las últimas técnicas de IA.");
 
                 requisitos_p.setText("Estudiante de carreras como Ingeniería de Sistemas, Estadística o\n afines.");
-                conocimiento_p.setText("Conocimientos de programación es deseable.");
+                //conocimiento_p.setText("Conocimientos de programación es deseable.");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de programación es deseable..");
+                conocimiento_p.setModel(contenedor);
+
                 beneficios_p.setText("Horario flexible, ambiente joven.");
                 icon.setIcon(new ImageIcon("src/img/omarsa.png"));
                 ubicacion.setText("Quito");
@@ -91,7 +99,10 @@ public class informacionOV {
                 subtitulo.setText("Staff Sotware Engineer");
                 parrafo_d.setText("Apoyo en tareas de monitoreo, detección y respuesta a incidentes de\n seguridad.");
                 requisitos_p.setText("Estudiante de Ingeniería de Sistemas o carreras afines.");
-                conocimiento_p.setText("Conocimientos de redes y seguridad informática.");
+                //conocimiento_p.setText("Conocimientos de redes y seguridad informática.");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de redes y seguridad informática.");
+                conocimiento_p.setModel(contenedor);
                 beneficios_p.setText("Horario flexible, ambiente joven.");
                 icon.setIcon(new ImageIcon("src/img/staff.png"));
                 ubicacion.setText("Quito");
@@ -106,7 +117,11 @@ public class informacionOV {
                 subtitulo.setText("METEL");
                 parrafo_d.setText("Participación en el desarrollo de software de la empresa. Oportunidad de\n aprender metodologías ágiles y trabajo en equipo.");
                 requisitos_p.setText("Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
-                conocimiento_p.setText("Conocimientos de programación (Java, Python u otros)");
+                //conocimiento_p.setText("Conocimientos de programación (Java, Python u otros)");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de programación (Java, Python u otros)");
+                conocimiento_p.setModel(contenedor);
+
                 beneficios_p.setText("Horario flexible, ambiente joven y dinámico");
                 icon.setIcon(new ImageIcon("src/img/metel.png"));
                 ubicacion.setText("Quito");
@@ -120,7 +135,11 @@ public class informacionOV {
                 subtitulo.setText("HandTree Consultancy");
                 parrafo_d.setText("Participar en las pruebas de software desarrollado en la empresa.\n Oportunidad de aprender testing manual y automatizado.");
                 requisitos_p.setText("Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
-                conocimiento_p.setText("Conocimientos de testing es deseable");
+                //conocimiento_p.setText("Conocimientos de testing es deseable");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de testing es deseable");
+                conocimiento_p.setModel(contenedor);
+
                 beneficios_p.setText("Horario flexible, ambiente joven y dinámico");
                 icon.setIcon(new ImageIcon("src/img/handtree.png"));
                 ubicacion.setText("Quito");
@@ -135,7 +154,11 @@ public class informacionOV {
                 subtitulo.setText("Punto Net");
                 parrafo_d.setText("Participación en tareas de administración de bases de datos de la\n empresa. Oportunidad de aprender SQL, NoSQL y modelado de datos.");
                 requisitos_p.setText("Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
-                conocimiento_p.setText("Conocimientos de bases de datos es deseable");
+                //conocimiento_p.setText("Conocimientos de bases de datos es deseable");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de bases de datos es deseable");
+                conocimiento_p.setModel(contenedor);
+
                 beneficios_p.setText("Horario flexible, ambiente joven y dinámico");
                 icon.setIcon(new ImageIcon("src/img/puntonett.png"));
                 ubicacion.setText("Quito");
@@ -150,7 +173,11 @@ public class informacionOV {
                 subtitulo.setText("QualityUp");
                 parrafo_d.setText("Apoyo en tareas de administración de redes y seguridad informática.\n Oportunidad de aprender sobre redes TCP/IP, firewalls, VPNs, etc.");
                 requisitos_p.setText("Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
-                conocimiento_p.setText("Conocimientos de redes es deseable");
+                //conocimiento_p.setText("Conocimientos de redes es deseable");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Conocimientos de bases de datos es deseable");
+                conocimiento_p.setModel(contenedor);
+
                 beneficios_p.setText("Horario flexible, ambiente joven y dinámico");
                 icon.setIcon(new ImageIcon("src/img/qualityUp.png"));
                 ubicacion.setText("Quito");
@@ -163,7 +190,12 @@ public class informacionOV {
                 subtitulo.setText("human brand S.A.");
                 parrafo_d.setText("Participación en proyectos de innovación tecnológica y emprendimiento.\n Oportunidad de aprender metodologías ágiles, diseño de productos digitales, validación de ideas, etc.");
                 requisitos_p.setText("Estudiante universitario de carreras como Ingeniería de Sistemas, Diseño,\n Marketing, etc.");
-                conocimiento_p.setText("Proactividad, creatividad y estar al día con las últimas tendencias \ndigitales.");
+                //conocimiento_p.setText("Proactividad, creatividad y estar al día con las últimas tendencias \ndigitales.");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("* Proactividad, creatividad y estar al día con las últimas tendencias \\ndigitales");
+                conocimiento_p.setModel(contenedor);
+
+
                 beneficios_p.setText("Horario flexible, ambiente diverso y enérgico. Networking con\n emprendedores.");
                 icon.setIcon(new ImageIcon("src/img/humanbrand.png"));
                 ubicacion.setText("Quito");

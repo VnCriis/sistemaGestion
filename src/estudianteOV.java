@@ -9,8 +9,6 @@ public class estudianteOV {
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JRadioButton prácticasPreprofesionalesRadioButton;
-    private JRadioButton a️PrácticasLaboralesRadioButton;
     private JButton verMásButton1;
     private JButton verMásButton2;
     private JButton verMásButton3;
@@ -20,6 +18,8 @@ public class estudianteOV {
     private JButton verMásButton7;
     private JButton verMásButton8;
     private JButton verMásButton9;
+    private JRadioButton prácticasPreprofesionalesRadioButton;
+    private JRadioButton a️PrácticasLaboralesRadioButton;
     private JRadioButton perfilRadioButton;
 
     public estudianteOV() {

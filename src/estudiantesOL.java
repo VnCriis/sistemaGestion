@@ -8,8 +8,6 @@ public class estudiantesOL {
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JRadioButton radioButton1;
-    private JRadioButton radioButton2;
     private JButton button1;
 
     JPanel olJPanel;
@@ -22,6 +20,8 @@ public class estudiantesOL {
     private JButton verMásButton6;
     private JButton verMásButton7;
     private JButton verMásButton8;
+    private JRadioButton radioButton1;
+    private JRadioButton radioButton2;
     private JRadioButton perfilRadioButton;
     //private JButton button1;
 

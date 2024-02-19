@@ -5,10 +5,10 @@ public class Main {
     public static void main(String[] args) {
         //ventana.setUndecorated(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setUndecorated(true);
-        ventana.setContentPane(new login().loginJPanel);
+        //ventana.setUndecorated(true);
+        ventana.setContentPane(new estudianteOV().ovJPanel);
         ventana.pack();
-        ventana.setSize(854, 480);
+        ventana.setSize(1000, 800);
         ventana.setVisible(true);
         //JFrame login = new JFrame("");
         //login.setContentPane(new login().loginJPanel);
