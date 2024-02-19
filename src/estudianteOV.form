@@ -307,7 +307,7 @@
                 <properties/>
                 <border type="empty"/>
                 <children>
-                  <grid id="36047" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                  <grid id="36047" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="20" left="0" bottom="20" right="0"/>
                     <constraints/>
                     <properties/>
@@ -450,7 +450,7 @@
                             <properties>
                               <font name="Dubai Medium" size="18" style="0"/>
                               <foreground color="-16777216"/>
-                              <text value="Practicante de Ciencia de Datos"/>
+                              <text value="Ciencia de Datos"/>
                             </properties>
                           </component>
                           <component id="78da9" class="javax.swing.JLabel">
@@ -496,7 +496,7 @@
                       <grid id="5787b" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -556,7 +556,7 @@
                       <grid id="b6d8e" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -616,7 +616,7 @@
                       <grid id="d5528" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -676,7 +676,7 @@
                       <grid id="6448" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -736,7 +736,7 @@
                       <grid id="b8b13" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -750,7 +750,7 @@
                             <properties>
                               <font name="Dubai Medium" size="18" style="0"/>
                               <foreground color="-16777216"/>
-                              <text value="Redes y Seguridad Informática"/>
+                              <text value="Seguridad Informática"/>
                             </properties>
                           </component>
                           <component id="20371" class="javax.swing.JLabel">
@@ -796,7 +796,7 @@
                       <grid id="85523" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                         <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
-                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
@@ -810,7 +810,7 @@
                             <properties>
                               <font name="Dubai Medium" size="18" style="0"/>
                               <foreground color="-16777216"/>
-                              <text value="Innovación y Emprendimiento Digital"/>
+                              <text value="Innovacion Digital"/>
                             </properties>
                           </component>
                           <component id="11fdf" class="javax.swing.JLabel">
@@ -852,6 +852,24 @@
                             </properties>
                           </component>
                         </children>
+                      </grid>
+                      <grid id="8e2bc" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                      <grid id="e4d4c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
                       </grid>
                     </children>
                   </grid>
