@@ -6,7 +6,7 @@ public class Main {
         //ventana.setUndecorated(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //ventana.setUndecorated(true);
-        ventana.setContentPane(new estudianteOV().ovJPanel);
+        ventana.setContentPane(new login().loginJPanel);
         ventana.pack();
         ventana.setSize(1000, 800);
         ventana.setVisible(true);

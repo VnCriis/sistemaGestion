@@ -2,9 +2,9 @@ import java.sql.*;
 
 public class connector {
     // Datos de conexión a la base de datos
-    private static final String dbhost = "jdbc:mysql://localhost:3306/sistemaGestion";
-    private static final String dbuser = "root";
-    private static final String dbpassword = "";
+    private static final String dbhost = "jdbc:mysql://uic8zenzexubon9b:CyeTIbbEElhaiZn8YeyJ@bgvdfopd1a0a1djyhyxs-mysql.services.clever-cloud.com:3306/bgvdfopd1a0a1djyhyxs";
+    private static final String dbuser = "uic8zenzexubon9b";
+    private static final String dbpassword = "CyeTIbbEElhaiZn8YeyJ";
 
     // Método para obtener la conexión a la base de datos
     public static Connection obtenerConexion() {
