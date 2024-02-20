@@ -51,7 +51,7 @@ public class informacionOL {
                 contenedor.addElement("• Beneficios de Ley.");
                 contenedor.addElement("• Beneficios Corporativos.");
                 contenedor.addElement("• Plan Carrera.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
 
@@ -76,7 +76,7 @@ public class informacionOL {
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Beneficios de ley & corporativos.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/novacero.png"));
 
@@ -105,7 +105,7 @@ public class informacionOL {
                 contenedor.addElement("• Seguro médico privado");
                 contenedor.addElement("Tarjeta de crédito como parte de tu bienvenida");
                 contenedor.addElement("• Planes de ahorro con beneficios especiales");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/banco_t.png"));
 
@@ -135,7 +135,7 @@ public class informacionOL {
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Beneficios de Ley.");
                 contenedor.addElement("• Beneficios Coorporativos.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/coris_t.png"));
 
@@ -166,7 +166,7 @@ public class informacionOL {
                 contenedor.addElement("• Sueldo fijo");
                 contenedor.addElement("• Seguro médico");
                 contenedor.addElement("• Beneficios de ley");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
@@ -195,7 +195,7 @@ public class informacionOL {
                 contenedor.addElement("• Sueldo fijo");
                 contenedor.addElement("• Aprendizaje continuo");
                 contenedor.addElement("• Beneficios de ley");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/improve.png"));
 
@@ -224,7 +224,7 @@ public class informacionOL {
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Sueldo fijo");
                 contenedor.addElement("• Beneficios de ley");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/staffing_t.png"));
 
                 ubicacion.setText("📍 Quito, Pichincha - Ecuador");
@@ -249,7 +249,7 @@ public class informacionOL {
                 //beneficios.setText("Beneficios");
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Beneficios de ley");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/puntonet_t.png"));
 
@@ -273,7 +273,7 @@ public class informacionOL {
                 //beneficios.setText("Beneficios");
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Aprendizaje continuo");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/centric_t.png"));
 

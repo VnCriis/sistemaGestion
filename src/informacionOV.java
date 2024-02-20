@@ -49,7 +49,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Beneficios de salud y días libres");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/crediprime.png"));
 
                 ubicacion.setText("📍 Quito, Pichincha - Ecuador");
@@ -73,7 +73,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Seguro médico y de vida");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
                 ubicacion.setText("📍 Quito, Pichincha - Ecuador");
@@ -95,7 +95,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/omarsa.png"));
                 ubicacion.setText("📍 Quito");
@@ -117,7 +117,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/staff.png"));
                 ubicacion.setText("📍 Quito");
@@ -140,7 +140,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/metel.png"));
                 ubicacion.setText("📍 Quito");
@@ -162,7 +162,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/handtree.png"));
                 ubicacion.setText("📍 Quito");
@@ -185,7 +185,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/puntonett.png"));
                 ubicacion.setText("📍 Quito");
                 sueldo.setText("💵 0");
@@ -207,7 +207,7 @@ public class informacionOV {
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/qualityUp.png"));
                 ubicacion.setText("📍 Quito");
@@ -229,7 +229,7 @@ public class informacionOV {
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
                 contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
                 contenedor.addElement("• Networking con emprendedores.");
-                conocimiento_p.setModel(contenedorbeneficios);
+                beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/humanbrand.png"));
                 ubicacion.setText("📍 Quito");
                 sueldo.setText("💵 0");
