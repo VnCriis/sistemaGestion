@@ -48,7 +48,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Beneficios de salud y días libres");
+                contenedorbeneficios.addElement("• Beneficios de salud y días libres");
                 beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/crediprime.png"));
 
@@ -72,7 +72,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Seguro médico y de vida");
+                contenedorbeneficios.addElement("• Seguro médico y de vida");
                 beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
@@ -94,7 +94,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/omarsa.png"));
@@ -116,7 +116,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/staff.png"));
@@ -139,7 +139,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven y dinámico.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/metel.png"));
@@ -161,7 +161,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven y dinámico.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/handtree.png"));
@@ -184,7 +184,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven y dinámico.");
                 beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/puntonett.png"));
                 ubicacion.setText("📍 Quito");
@@ -206,7 +206,7 @@ public class informacionOV {
 
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven y dinámico.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/qualityUp.png"));
@@ -227,8 +227,8 @@ public class informacionOV {
                 conocimiento_p.setModel(contenedor);
 
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Horario flexible, ambiente joven y dinámico.");
-                contenedor.addElement("• Networking con emprendedores.");
+                contenedorbeneficios.addElement("• Horario flexible, ambiente joven y dinámico.");
+                contenedorbeneficios.addElement("• Networking con emprendedores.");
                 beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/humanbrand.png"));
                 ubicacion.setText("📍 Quito");

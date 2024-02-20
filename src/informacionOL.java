@@ -48,9 +48,9 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Beneficios de Ley.");
-                contenedor.addElement("• Beneficios Corporativos.");
-                contenedor.addElement("• Plan Carrera.");
+                contenedorbeneficios.addElement("• Beneficios de Ley.");
+                contenedorbeneficios.addElement("• Beneficios Corporativos.");
+                contenedorbeneficios.addElement("• Plan Carrera.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
@@ -75,7 +75,7 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Beneficios de ley & corporativos.");
+                contenedorbeneficios.addElement("• Beneficios de ley & corporativos.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/novacero.png"));
@@ -102,9 +102,9 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Seguro médico privado");
-                contenedor.addElement("Tarjeta de crédito como parte de tu bienvenida");
-                contenedor.addElement("• Planes de ahorro con beneficios especiales");
+                contenedorbeneficios.addElement("• Seguro médico privado");
+                contenedorbeneficios.addElement("Tarjeta de crédito como parte de tu bienvenida");
+                contenedorbeneficios.addElement("• Planes de ahorro con beneficios especiales");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/banco_t.png"));
@@ -133,8 +133,8 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Beneficios de Ley.");
-                contenedor.addElement("• Beneficios Coorporativos.");
+                contenedorbeneficios.addElement("• Beneficios de Ley.");
+                contenedorbeneficios.addElement("• Beneficios Coorporativos.");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/coris_t.png"));
@@ -163,9 +163,9 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Sueldo fijo");
-                contenedor.addElement("• Seguro médico");
-                contenedor.addElement("• Beneficios de ley");
+                contenedorbeneficios.addElement("• Sueldo fijo");
+                contenedorbeneficios.addElement("• Seguro médico");
+                contenedorbeneficios.addElement("• Beneficios de ley");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
@@ -192,9 +192,9 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Sueldo fijo");
-                contenedor.addElement("• Aprendizaje continuo");
-                contenedor.addElement("• Beneficios de ley");
+                contenedorbeneficios.addElement("• Sueldo fijo");
+                contenedorbeneficios.addElement("• Aprendizaje continuo");
+                contenedorbeneficios.addElement("• Beneficios de ley");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/improve.png"));
@@ -222,8 +222,8 @@ public class informacionOL {
 
                 //beneficios
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Sueldo fijo");
-                contenedor.addElement("• Beneficios de ley");
+                contenedorbeneficios.addElement("• Sueldo fijo");
+                contenedorbeneficios.addElement("• Beneficios de ley");
                 beneficios_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/staffing_t.png"));
 
@@ -248,7 +248,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Beneficios de ley");
+                contenedorbeneficios.addElement("• Beneficios de ley");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/puntonet_t.png"));
@@ -272,7 +272,7 @@ public class informacionOL {
 
                 //beneficios.setText("Beneficios");
                 DefaultListModel contenedorbeneficios= new DefaultListModel();
-                contenedor.addElement("• Aprendizaje continuo");
+                contenedorbeneficios.addElement("• Aprendizaje continuo");
                 beneficios_p.setModel(contenedorbeneficios);
 
                 icon.setIcon(new ImageIcon("src/img/centric_t.png"));
