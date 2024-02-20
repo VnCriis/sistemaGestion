@@ -4,7 +4,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.sql.*;
-
 public class estudiante {
     JPanel estudianteJPanel;
     private JRadioButton radioButton1;
@@ -86,34 +85,25 @@ public class estudiante {
                 //((JFrame) SwingUtilities.getWindowAncestor(radioButton2)).dispose();
             }
         });
-
         try {
-            Connection conexion = connector.obtenerConexion();
-            String query = "SELECT * FROM listaestudiantes";
+            // Crear una instancia de la clase login
+            login instanciaLogin = new login("valorNombre", "valorFacultad", "valorCarrera", "valorPeriodo");
 
-            // Ejecutar la consulta
-            Statement statement = conexion.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
+            // Obtener los valores utilizando los métodos getter
+            String nombre1 = instanciaLogin.getNombre1();
+            String facultad = instanciaLogin.getFacultad();
+            String carrera = instanciaLogin.getCarrera();
+            String periodo = instanciaLogin.getPeriodo();
 
-            // Iterar sobre los resultados y agregarlos al JTextArea existente
-            while (resultSet.next()) {
-                String nombre = resultSet.getString("nombre");
-                String facultad = resultSet.getString("facultad");
-                String carrera = resultSet.getString("carrera");
-                String periodo = resultSet.getString("periodo");
-                textField1.setText(nombre); // Agrega un salto de línea después de cada nombre
-                textField2.setText(facultad); // Agrega un salto de línea después de cada facultad
-                textField3.setText(carrera); // Agrega un salto de línea después de cada carrera
-                textField4.setText(periodo);
-            }
-
-            resultSet.close();
-            statement.close();
-            conexion.close();
-        } catch (SQLException e) {
+            // Insertar los valores en los campos de texto
+            textField1.setText(nombre1);
+            textField2.setText(facultad);
+            textField3.setText(carrera);
+            textField4.setText(periodo);
+        } catch (Exception e) {
+            // Manejar cualquier excepción que pueda ocurrir
             e.printStackTrace();
         }
-
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
