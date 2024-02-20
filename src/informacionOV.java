@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class informacionOV {
     JPanel JPanelOV;
@@ -237,5 +239,20 @@ public class informacionOV {
                 tiempo.setText("🕛 Medio tiempo | Remoto");
             }
         }
+        prácticasPreprofesionalesRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudiantesOL().olJPanel);
+                Main.ventana.validate();
+            }
+        });
+
+        perfilRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
+                Main.ventana.validate();
+            }
+        });
     };
 }

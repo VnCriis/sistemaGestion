@@ -94,5 +94,19 @@ public class estudianteOV {
                 Main.ventana.revalidate();
             }
         });
+        a️PrácticasLaboralesRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudiantesOL().olJPanel);
+                Main.ventana.validate();
+            }
+        });
+        perfilRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
+                Main.ventana.validate();
+            }
+        });
     }
 }

@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class informacion_estudiante {
-    private JPanel infoEstudiante;
+    JPanel infoEstudiante;
     private JPanel estudianteJPanel;
     private JTextField textField1;
     private JTextField textField2;

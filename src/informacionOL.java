@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class informacionOL {
     private JPanel estudianteJPanel;
@@ -114,7 +116,7 @@ public class informacionOL {
                 avance.setText("✅ Senior");
                 tiempo.setText("🕛 Full-time | Presencial ");
             }
-            case "cuarta" -> {
+            case "cuarto" -> {
                 titulo.setText("Tecnico De Seguridad y Salud Ocupacional");
                 subtitulo.setText("CORIS DEL ECUADOR");
                 //descripcion.setText("Descripcion del puesto");
@@ -145,7 +147,7 @@ public class informacionOL {
                 tiempo.setText("🕛 Full-time | Presencial ");
 
             }
-            case "quinta" -> {
+            case "quinto" -> {
                 titulo.setText("Analista De Desarrollo");
                 subtitulo.setText("ORIGINARSA S.A");
                 parrafo_d.setText("* Evaluación y mejora de procesos relacionados con el desarrollo de software.\n" +
@@ -175,7 +177,7 @@ public class informacionOL {
                 avance.setText("✅ Junior");
                 tiempo.setText("🕛 Full-time | Presencial ");
             }
-            case "sexta" -> {
+            case "sexto" -> {
                 titulo.setText("Analista De Desarrollo");
                 subtitulo.setText("IMPROVE-INFORMATION-TECHNOLOGIES CIA.LTDA");
                 parrafo_d.setText("* Evaluación y mejora de procesos relacionados con el desarrollo de software.\n" +
@@ -204,7 +206,7 @@ public class informacionOL {
                 avance.setText("✅ Junior");
                 tiempo.setText("🕛 Full-time | Presencial ");
             }
-            case "septima" -> {
+            case "septimo" -> {
                 titulo.setText("Staff Software Engineer");
                 subtitulo.setText("STAFFING");
                 parrafo_d.setText("* Staff Software Engineer Estamos buscando un Staff Full-Stack Engineer experimentado " +
@@ -283,5 +285,26 @@ public class informacionOL {
                 tiempo.setText("🕛 Interno | Presencial");
             }
         }
+        radioButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudiantesOL().olJPanel);
+                Main.ventana.validate();
+            }
+        });
+        radioButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudiantesOL().olJPanel);
+                Main.ventana.validate();
+            }
+        });
+        perfilRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
+                Main.ventana.validate();
+            }
+        });
     };
 }

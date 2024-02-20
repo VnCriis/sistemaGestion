@@ -404,7 +404,7 @@
                                   <text value="🗓️Publicado en 08/02/2024"/>
                                 </properties>
                               </component>
-                              <component id="7848f" class="javax.swing.JButton" binding="verMásButton" default-binding="true">
+                              <component id="7848f" class="javax.swing.JButton" binding="verMasButton">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -472,7 +472,7 @@
                                   <text value="🗓️Publicado en 08/02/2024"/>
                                 </properties>
                               </component>
-                              <component id="b7579" class="javax.swing.JButton" binding="verMásButton1" default-binding="true">
+                              <component id="b7579" class="javax.swing.JButton" binding="verMasButton1">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -540,7 +540,7 @@
                                   <text value="🗓️Publicado en 16/02/2024"/>
                                 </properties>
                               </component>
-                              <component id="cca44" class="javax.swing.JButton" binding="verMásButton2" default-binding="true">
+                              <component id="cca44" class="javax.swing.JButton" binding="verMasButton2">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -615,7 +615,7 @@
                                   <text value="🗓️Publicado en 25/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="d8dee" class="javax.swing.JButton" binding="verMásButton3" default-binding="true">
+                              <component id="d8dee" class="javax.swing.JButton" binding="verMasButton3">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -680,7 +680,7 @@
                                   <text value="🗓️Publicado en 22/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="39863" class="javax.swing.JButton" binding="verMásButton4" default-binding="true">
+                              <component id="39863" class="javax.swing.JButton" binding="verMasButton4">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -745,7 +745,7 @@
                                   <text value="🗓️Publicado en 19/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="2dbb2" class="javax.swing.JButton" binding="verMásButton5" default-binding="true">
+                              <component id="2dbb2" class="javax.swing.JButton" binding="verMasButton5">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -820,7 +820,7 @@
                                   <text value="🗓️Publicado en 19/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="c6c0d" class="javax.swing.JButton" binding="verMásButton6" default-binding="true">
+                              <component id="c6c0d" class="javax.swing.JButton" binding="verMasButton6">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -885,7 +885,7 @@
                                   <text value="🗓️Publicado en 17/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="9203" class="javax.swing.JButton" binding="verMásButton7" default-binding="true">
+                              <component id="9203" class="javax.swing.JButton" binding="verMasButton7">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
@@ -950,7 +950,7 @@
                                   <text value="🗓️Publicado en 16/01/2024"/>
                                 </properties>
                               </component>
-                              <component id="54b54" class="javax.swing.JButton" binding="verMásButton8" default-binding="true">
+                              <component id="54b54" class="javax.swing.JButton" binding="verMasButton8">
                                 <constraints>
                                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>

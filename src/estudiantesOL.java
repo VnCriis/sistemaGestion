@@ -11,15 +11,15 @@ public class estudiantesOL {
     private JButton button1;
 
     JPanel olJPanel;
-    private JButton verMásButton;
-    private JButton verMásButton1;
-    private JButton verMásButton2;
-    private JButton verMásButton3;
-    private JButton verMásButton4;
-    private JButton verMásButton5;
-    private JButton verMásButton6;
-    private JButton verMásButton7;
-    private JButton verMásButton8;
+    private JButton verMasButton;
+    private JButton verMasButton1;
+    private JButton verMasButton2;
+    private JButton verMasButton3;
+    private JButton verMasButton4;
+    private JButton verMasButton5;
+    private JButton verMasButton6;
+    private JButton verMasButton7;
+    private JButton verMasButton8;
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
     private JRadioButton perfilRadioButton;
@@ -35,7 +35,7 @@ public class estudiantesOL {
 
             }
         });
-        verMásButton.addActionListener(new ActionListener() {
+        verMasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("primero").JPanelOL);
@@ -43,60 +43,74 @@ public class estudiantesOL {
             }
         });
 
-        verMásButton1.addActionListener(new ActionListener() {
+        verMasButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("segundo").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton2.addActionListener(new ActionListener() {
+        verMasButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("tercero").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton3.addActionListener(new ActionListener() {
+        verMasButton3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("cuarto").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton4.addActionListener(new ActionListener() {
+        verMasButton4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("quinto").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton5.addActionListener(new ActionListener() {
+        verMasButton5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("sexto").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton6.addActionListener(new ActionListener() {
+        verMasButton6.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("septimo").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton7.addActionListener(new ActionListener() {
+        verMasButton7.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("octava").JPanelOL);
                 Main.ventana.revalidate();
             }
         });
-        verMásButton8.addActionListener(new ActionListener() {
+        verMasButton8.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacionOL("novena").JPanelOL);
                 Main.ventana.revalidate();
+            }
+        });
+        radioButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudianteOV().ovJPanel);
+                Main.ventana.validate();
+            }
+        });
+        perfilRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
+                Main.ventana.validate();
             }
         });
     }
