@@ -5,6 +5,15 @@ import java.awt.event.ActionListener;
 public class estudianteFormularios {
     JPanel formulariosJPanel;
     private JButton button1;
+    private JPanel estudianteJPanel;
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JRadioButton radioButton1;
+    private JRadioButton radioButton2;
+    private JRadioButton perfilRadioButton;
+    private JTable table1;
 
     public estudianteFormularios() {
         Main.ventana.setTitle("Gestion De Proyectos");
