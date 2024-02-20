@@ -17,12 +17,12 @@ public class informacionOL {
     private JLabel requisitos;
     private JLabel requisitos_p;
     private JLabel beneficios;
-    private JLabel beneficios_p;
+    private JList beneficios_p;
     private JLabel icon;
     JPanel JPanelOL;
     private JLabel textFormacionA;
     private JLabel textConocimientoAd;
-    private JLabel conocimiento_p;
+    private JList conocimiento_p;
     private JLabel ubicacion;
     private JLabel sueldo;
     private JLabel avance;
@@ -36,82 +36,113 @@ public class informacionOL {
                 titulo.setText("Asistente De Sistemas");
                 subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
                 //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("* Brindar Soporte oportuno de primer y segundo nivel a clientes internos.");
+                parrafo_d.setText("Brindar Soporte oportuno de primer y segundo nivel a clientes internos.");
                 //requisitos.setText("Requisitos");
                 //textFormacionA.setText("Formacion Academica:");
-                requisitos_p.setText("* Ingeniero o Egresado en Sistemas");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Conocimiento de módulos de Sistemas de Gestión (ERP)." );
+                requisitos_p.setText("• Ingeniero o Egresado en Sistemas");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Conocimiento de Cyberseguridad.");
+                contenedor.addElement("• Administración de base de datos mysql, sql server.");
+                contenedor.addElement("• Soporte remoto o en sitio a usuarios.");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de Ley");
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Beneficios de Ley.");
+                contenedor.addElement("• Beneficios Corporativos.");
+                contenedor.addElement("• Plan Carrera.");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/servical_renovado.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("500");
-                avance.setText("Semi senior");
-                tiempo.setText("Full-time | Presencial");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 500");
+                avance.setText("✅ Semi senior");
+                tiempo.setText("🕛 Full-time | Presencial");
             }
             case "segundo" -> {
                 titulo.setText("Supervisor De Produccion");
                 subtitulo.setText("NOVACERO");
-                //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("* Supervisar que se cumpla con las guías y métodos de trabajo para garantizar " +
+                parrafo_d.setText("Supervisar que se cumpla con las guías y métodos de trabajo para garantizar " +
                         "la operatividad de maquinas y evitar accidentes");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
-                requisitos_p.setText("* Tecnologia Superior De Agua y Saniamiento");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Procesos de produccion." );
+                requisitos_p.setText("• Tecnologia Superior De Agua y Saniamiento");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Procesos de producción");
+                contenedor.addElement("• Manejo de personal.");
+                contenedor.addElement("• Metalurgia y materiales.");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley & corporativos.");
+
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Beneficios de ley & corporativos.");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/novacero.png"));
 
-                ubicacion.setText("Latacunga, Cotopaxi - Ecuador");
-                sueldo.setText("No especificado");
-                avance.setText("Semi senior");
-                tiempo.setText(" No especificado | Presencial");
+                ubicacion.setText("📍 Latacunga, Cotopaxi - Ecuador");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Semi senior");
+                tiempo.setText("🕛 No especificado | Presencial");
             }
             case "tercero" -> {
                 titulo.setText("Experto Calidad TI(Quality Assurance)");
                 subtitulo.setText("BANCO PICHINCHA");
                 //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("* Planificar, monitorear y dar seguimiento al proceso de aseguramiento y control de calidad utilizado en todo el ciclo de vida de construcción de soluciones tecnológicas, control de métricas de cumplimiento de los lineamientos de calidad, alineación del plan de pruebas, planes de mejora continua del proceso, acompañamiento a los equipos de QA así como el monitoreo de demanda y distribución de cargas entre la tribu/squad asignado, con el fin de contribuir al cumplimiento y alineación del proceso de aseguramiento y control de calidad de software, mejora de tiempos, nivel de servicio y eficiencias de entrega de soluciones al negocio, de acuerdo a las estrategia definida por el Chapter de QA.");
+                parrafo_d.setText("• Planificar, monitorear y dar seguimiento al proceso de aseguramiento y control de calidad utilizado en todo el ciclo de vida de construcción de soluciones tecnológicas, control de métricas de cumplimiento de los lineamientos de calidad, alineación del plan de pruebas, planes de mejora continua del proceso, acompañamiento a los equipos de QA así como el monitoreo de demanda y distribución de cargas entre la tribu/squad asignado, con el fin de contribuir al cumplimiento y alineación del proceso de aseguramiento y control de calidad de software, mejora de tiempos, nivel de servicio y eficiencias de entrega de soluciones al negocio, de acuerdo a las estrategia definida por el Chapter de QA.");
                 //requisitos.setText("Requisitos");
                 //textFormacionA.setText("Formacion Academica:");
-                requisitos_p.setText("* Tecnologia Sistemas yy Telecomunicaciones");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Sólida en frameworks de pruebas de software." );
+                requisitos_p.setText("• Tecnologia Sistemas yy Telecomunicaciones");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Manejo de herramientas en gestión de proyectos y pruebas.");
+                contenedor.addElement("• Herramientas de automatización y rendimiento de pruebas.");
+                contenedor.addElement("• Prácticas de Pruebas: ISTQB.");
+                contenedor.addElement("• Lenguajes de programación.");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Seguro médico privado");
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Seguro médico privado");
+                contenedor.addElement("Tarjeta de crédito como parte de tu bienvenida");
+                contenedor.addElement("• Planes de ahorro con beneficios especiales");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/banco_t.png"));
 
-                ubicacion.setText("Pichincha, Ecuador - Quito");
-                sueldo.setText("No especificado");
-                avance.setText("Senior");
-                tiempo.setText("Full-time | Presencial ");
+                ubicacion.setText("📍 Pichincha, Ecuador - Quito");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Senior");
+                tiempo.setText("🕛 Full-time | Presencial ");
             }
             case "cuarta" -> {
                 titulo.setText("Tecnico De Seguridad y Salud Ocupacional");
                 subtitulo.setText("CORIS DEL ECUADOR");
                 //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("* Levantamiento de matrices de riesgos, planes de emergencia, contingencia, políticas y procedimientos del subsistema de SSO.");
+                parrafo_d.setText("Levantamiento de matrices de riesgos, planes de emergencia, contingencia, políticas y procedimientos del subsistema de SSO.");
                 //requisitos.setText("Requisitos");
                 //textFormacionA.setText("Formacion Academica:");
-                requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Experiencia mínima de 1 año manejando y liderando los procesos del subsistema." );
+                requisitos_p.setText("• Tecnologia Sistemas y Telecomunicaciones");
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Credibilidad técnica");
+                contenedor.addElement("• Seguimiento de gestión");
+                contenedor.addElement("• Pensamiento analítico");
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios Coorporativos.");
+                conocimiento_p.setModel(contenedor);
+
+
+
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Beneficios de Ley.");
+                contenedor.addElement("• Beneficios Coorporativos.");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/coris_t.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("600");
-                avance.setText("Semi Senior");
-                tiempo.setText("Full-time | Presencial ");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 600");
+                avance.setText("✅ Semi Senior");
+                tiempo.setText("🕛 Full-time | Presencial ");
 
             }
             case "quinta" -> {
@@ -122,16 +153,27 @@ public class informacionOL {
 
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Manejo de: Microsoft. Net, SQL Server, MySQL, NoSQL, O065, IIS, Tableau, Power BI." );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Gestión en bases de datos, Infraestructura básica");
+                contenedor.addElement("• Procedimientos vistas, funciones, Jobs, y triggers");
+                contenedor.addElement("• Arquitectura de software (API Rest y MVC)");
+                contenedor.addElement("• Manejo de: Microsoft. Net, SQL Server, MySQL, NoSQL ");
+
+
 
                 //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley.");
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Sueldo fijo");
+                contenedor.addElement("• Seguro médico");
+                contenedor.addElement("• Beneficios de ley");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/originasa.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("No especificado");
-                avance.setText("Junior");
-                tiempo.setText("Full-time | Presencial ");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Junior");
+                tiempo.setText("🕛 Full-time | Presencial ");
             }
             case "sexta" -> {
                 titulo.setText("Analista De Desarrollo");
@@ -140,17 +182,27 @@ public class informacionOL {
                         "Papel crucial en la planificación, diseño, implementación y mejora continua de soluciones de software, asegurando que cumplan con los requisitos del negocio y se desarrollen de manera eficiente y efectiva.");
 
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Manejo de: Microsoft. Net, SQL Server, MySQL, NoSQL, O065, IIS, Tableau, Power BI." );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Levantamiento, análisis y escritura de requerimientos");
+                contenedor.addElement("• Conocimientos HTML 5, CSS, JavaScript");
+                contenedor.addElement("• Conocimientos SQL Server, Transact SQL");
+                contenedor.addElement("• Creación de historias de usuario");
+                contenedor.addElement("• Conocimientos en diagramas de flujo de procesos");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley.");
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Sueldo fijo");
+                contenedor.addElement("• Aprendizaje continuo");
+                contenedor.addElement("• Beneficios de ley");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/improve.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("No especificado");
-                avance.setText("Junior");
-                tiempo.setText("Full-time | Presencial ");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Junior");
+                tiempo.setText("🕛 Full-time | Presencial ");
             }
             case "septima" -> {
                 titulo.setText("Staff Software Engineer");
@@ -160,17 +212,25 @@ public class informacionOL {
                         "de servicios de integración y ayudar a llevar nuestra empresa al siguiente nivel..");
 
                 requisitos_p.setText("* Tecnologia en Desarrollo de Software");
-                //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Experiencia trabajando con Node.js, Typescript or JavaScript.." );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Experiencia con NestJS, Node.js, Typecript o JavaScript.");
+                contenedor.addElement("• Bases de datos relacionales (Postgres, Redshift) y bibliotecas ORM.");
+                contenedor.addElement("• Experiencia con estructuras de datos, transformación y desnormalización.");
+                contenedor.addElement("• Lenguajes de marcado como JSON y XML.");
+                contenedor.addElement("• Conocimientos en diagramas de flujo de procesos");
+                conocimiento_p.setModel(contenedor);
 
-                //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley.");
+                //beneficios
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Sueldo fijo");
+                contenedor.addElement("• Beneficios de ley");
+                conocimiento_p.setModel(contenedorbeneficios);
                 icon.setIcon(new ImageIcon("src/img/staffing_t.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("No especificado");
-                avance.setText("Semi senior");
-                tiempo.setText("Full-time | Presencial ");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Semi senior");
+                tiempo.setText("🕛 Full-time | Presencial ");
             }
             case "octava" -> {
                 titulo.setText("Pasante Sistemas");
@@ -180,16 +240,23 @@ public class informacionOL {
 
                 requisitos_p.setText("* Tecnologia en Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Apoyo Levantamiento Documentación e implementación de Servicios para Arquitectura de Software.." );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Automatización de seguridad para manejo de credenciales de usuarios");
+                contenedor.addElement("• Levantamiento de Procesos de QA para desarrollo de software interno");
+                contenedor.addElement("• Documentación e implementación de Servicios para Arquitectura de Software.");
+                conocimiento_p.setModel(contenedor);
 
                 //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley.");
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Beneficios de ley");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/puntonet_t.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("500");
-                avance.setText("Junior");
-                tiempo.setText("Intern | Presencial ");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 500");
+                avance.setText("✅ Junior");
+                tiempo.setText("🕛 Interno | Presencial ");
             }
             case "novena" -> {
                 titulo.setText("Centric - Passante de Sistemas");
@@ -197,17 +264,23 @@ public class informacionOL {
                 parrafo_d.setText("* Apoyar en los procesos operativos del área.");
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
-                conocimiento_p.setText("* Instalación y mantenimiento de diversos periféricos, así como instalación de " +
-                        "actualizaciones y parches correspondientes.." );
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Manejar inventario tecnológico de las empresas del grupo.");
+                contenedor.addElement("• Instalación y mantenimiento de diversos periféricos");
+                contenedor.addElement("• Configuración de aplicaciones de hardware y software");
+                conocimiento_p.setModel(contenedor);
 
                 //beneficios.setText("Beneficios");
-                beneficios_p.setText("* Beneficios de ley.");
+                DefaultListModel contenedorbeneficios= new DefaultListModel();
+                contenedor.addElement("• Aprendizaje continuo");
+                conocimiento_p.setModel(contenedorbeneficios);
+
                 icon.setIcon(new ImageIcon("src/img/centric_t.png"));
 
-                ubicacion.setText("Quito, Pichincha - Ecuador");
-                sueldo.setText("No especificado");
-                avance.setText("Junior");
-                tiempo.setText("Intern | Presencial");
+                ubicacion.setText("📍 Quito, Pichincha - Ecuador");
+                sueldo.setText("💵 No especificado");
+                avance.setText("✅ Junior");
+                tiempo.setText("🕛 Interno | Presencial");
             }
         }
     };
