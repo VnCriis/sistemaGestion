@@ -64,6 +64,8 @@
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
+                          <caretColor color="-16777216"/>
+                          <disabledTextColor color="-16777216"/>
                           <editable value="false"/>
                           <enabled value="false"/>
                           <visible value="true"/>
@@ -77,6 +79,8 @@
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
+                          <caretColor color="-16777216"/>
+                          <disabledTextColor color="-16777216"/>
                           <editable value="false"/>
                           <enabled value="false"/>
                           <visible value="true"/>
@@ -90,6 +94,8 @@
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
+                          <caretColor color="-16777216"/>
+                          <disabledTextColor color="-16777216"/>
                           <editable value="false"/>
                           <visible value="true"/>
                         </properties>
@@ -102,6 +108,8 @@
                         </constraints>
                         <properties>
                           <background color="-2500135"/>
+                          <caretColor color="-16777216"/>
+                          <disabledTextColor color="-16777216"/>
                           <editable value="false"/>
                           <visible value="true"/>
                         </properties>
@@ -544,8 +552,7 @@
                             <properties>
                               <background color="-3416079"/>
                               <foreground color="-3416079"/>
-                              <icon value="img/imguser.png"/>
-                              <text value=""/>
+                              <text value="Cerrar Sesión"/>
                             </properties>
                           </component>
                         </children>

@@ -10,7 +10,7 @@ public class informacionOL {
     private JTextField textField4;
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
-    private JButton button1;
+    private JButton cerrarSesiónButton;
     private JButton aplicarAhoraButton;
     private JLabel titulo;
     private JLabel subtitulo;
@@ -33,6 +33,10 @@ public class informacionOL {
 
     public informacionOL(String cambio){
         Main.ventana.setTitle("Gestion De Proyectos");
+        textField1.setText(Main.nombre);
+        textField2.setText(Main.facultad);
+        textField3.setText(Main.carrera);
+        textField4.setText(Main.periodo);
         switch (cambio){
             case "primero" -> {
                 titulo.setText("Asistente De Sistemas");
@@ -199,7 +203,8 @@ public class informacionOL {
                 contenedorbeneficios.addElement("• Beneficios de ley");
                 beneficios_p.setModel(contenedorbeneficios);
 
-                icon.setIcon(new ImageIcon("src/img/improve.png"));
+                icon.setIcon(new ImageIcon("src/img/improve_t.png"));
+
 
                 ubicacion.setText("📍 Quito, Pichincha - Ecuador");
                 sueldo.setText("💵 No especificado");
@@ -304,6 +309,13 @@ public class informacionOL {
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
                 Main.ventana.validate();
+            }
+        });
+        cerrarSesiónButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new login().loginJPanel);
+                Main.ventana.revalidate();
             }
         });
     };

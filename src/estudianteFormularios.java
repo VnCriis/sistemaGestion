@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 public class estudianteFormularios {
     JPanel formulariosJPanel;
@@ -13,22 +14,32 @@ public class estudianteFormularios {
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
     private JRadioButton perfilRadioButton;
-    private JTable table1;
+    private JButton descargarFormularioButton;
+    private JButton subirFormularioButton;
 
     public estudianteFormularios() {
         Main.ventana.setTitle("Gestion De Proyectos");
+        textField1.setText(Main.nombre);
+        textField2.setText(Main.facultad);
+        textField3.setText(Main.carrera);
+        textField4.setText(Main.periodo);
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Main.ventana.setContentPane(new estudiante().estudianteJPanel);
+                Main.ventana.setContentPane(new login().loginJPanel);
                 Main.ventana.revalidate();
-                //JFrame estudiante = new JFrame("");
-                //estudiante.setContentPane(new estudiante().estudianteJPanel);
-                //estudiante.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                //estudiante.pack();
-                //estudiante.setSize(843,721);
-                //estudiante.setVisible(true);
-                //((JFrame) SwingUtilities.getWindowAncestor(button1)).dispose();
+
+            }
+        });
+        descargarFormularioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser chooser = new JFileChooser();
+                int seleccion = chooser.showSaveDialog(null);
+                if (seleccion == JFileChooser.APPROVE_OPTION){
+                    File JFile = chooser.getSelectedFile();
+
+                }
             }
         });
     }

@@ -7,7 +7,7 @@ public class tutor {
     private JTextField textField3;
     private JPanel estudianteJPanel;
     private JRadioButton radioButton1;
-    private JButton button1;
+    private JButton cerrarSesiónButton;
 
     public tutor(JTextField textField1, JTextField textField2, JTextField textField3) {
         this.textField1 = textField1;

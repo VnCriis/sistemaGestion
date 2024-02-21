@@ -11,6 +11,7 @@ public class login {
     private JPasswordField passwordField1;
     private JComboBox comboBox1;
     JPanel loginJPanel;
+    private JLabel advertencia;
     public String nombre1;
     public String facultad;
     public String carrera;
@@ -97,61 +98,43 @@ public class login {
     public login() {
         Main.ventana.setTitle("Gestion de Proyectos");
         ingresarButton.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 String nombre = textField4.getText();
-                int contraseña = Integer.parseInt(passwordField1.getText());
+                String contraseña = String.valueOf(passwordField1.getText());
                 String opcionSeleccionada = (String) comboBox1.getSelectedItem();
-                if (opcionSeleccionada != null) {
+                if (!nombre.isEmpty() && !contraseña.isEmpty()) {
                     Connection conexion = connector.obtenerConexion();
                     switch (opcionSeleccionada) {
                         case "Estudiante":
                             try {
-                                String sql = "SELECT * FROM estudiantes WHERE usuario = ? AND contraseña = ?";
-                                PreparedStatement statement = conexion.prepareStatement(sql);
-                                statement.setString(1, nombre);
-                                statement.setString(2, String.valueOf(contraseña));
-                                ResultSet resultSet = statement.executeQuery();
-
+                                String sql = "SELECT * FROM estudiantes WHERE usuario = '"+ nombre+"' AND contraseña = "+ contraseña;
+                                Statement statement = conexion.createStatement();
+                                ResultSet resultSet = statement.executeQuery(sql);
                                 if (resultSet.next()) {
                                     int idEstudiante = resultSet.getInt("id");
-                                    String consulta = "SELECT * FROM listaestudiantes WHERE id_estudiante = ?";
-                                    PreparedStatement statement1 = conexion.prepareStatement(consulta);
-                                    statement1.setInt(1, idEstudiante);
-                                    ResultSet resultSet1 = statement1.executeQuery();
+                                    String consulta = "SELECT * FROM listaestudiantes WHERE id_estudiante = "+idEstudiante;
+                                    Statement statement2 = conexion.createStatement();
+                                    ResultSet resultSet2 = statement.executeQuery(consulta);
+                                    resultSet2.next();
+                                    Main.nombre = resultSet2.getString("nombre");
+                                    Main.facultad = resultSet2.getString("facultad");
+                                    Main.carrera=resultSet2.getString("carrera");
+                                    Main.periodo= resultSet2.getString("periodo");
+                                    Main.codigoUnico= resultSet2.getInt("codigo");
 
-                                    if (resultSet1.next()) {
-                                        // Crear una instancia de la clase login y asignar valores
-                                        login instanciaLogin = new login();
-                                        instanciaLogin.setNombre1(resultSet1.getString("nombre"));
-                                        instanciaLogin.setFacultad(resultSet1.getString("facultad"));
-                                        instanciaLogin.setCarrera(resultSet1.getString("carrera"));
-                                        instanciaLogin.setPeriodo(resultSet1.getString("periodo"));
-
-                                        // Hacer algo con la información obtenida, como asignarla a variables globales o configurar la interfaz de usuario
-                                        // Aquí, simplemente vamos a establecer los valores en la interfaz de estudiante
-
-                                        estudiante estudiantePanel = new estudiante();
-                                        estudiantePanel.getTextField1().setText(instanciaLogin.getNombre1());
-                                        estudiantePanel.getTextField2().setText(instanciaLogin.getFacultad());
-                                        estudiantePanel.getTextField3().setText(instanciaLogin.getCarrera());
-                                        estudiantePanel.getTextField4().setText(instanciaLogin.getPeriodo());
-
-                                        Main.ventana.setContentPane(estudiantePanel.estudianteJPanel);
-                                        Main.ventana.revalidate();
-                                    } else {
-                                        JOptionPane.showMessageDialog(null, "No se encontró información del estudiante en listaestudiantes");
-                                    }
-
-                                    resultSet1.close();
-                                    statement1.close();
+                                    Main.ventana.setContentPane(new estudiante().estudianteJPanel);
+                                    Main.ventana.revalidate();
+                                    resultSet2.close();
+                                    statement2.close();
+                                    resultSet.close();
+                                    statement.close();
+                                    conexion.close();
                                 } else {
-                                    JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrecto");
+                                    JOptionPane.showMessageDialog(null, "No se encontró información del estudiante en listaestudiantes");
                                 }
 
-                                resultSet.close();
-                                statement.close();
-                                conexion.close();
                             } catch (SQLException exception) {
                                 JOptionPane.showMessageDialog(null, "Error al realizar la consulta SQL");
                                 exception.printStackTrace();
@@ -168,30 +151,29 @@ public class login {
                                 if (resultSet.next()) {
                                     Main.ventana.setContentPane(new tutor().tutorJPanel);
                                     Main.ventana.revalidate();
-                                    //JFrame tutor = new JFrame("");
-                                    //tutor.setContentPane(new tutor().tutorJPanel);
-                                    //tutor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                                    //tutor.pack();
-                                    //tutor.setSize(843,721);
-                                    //tutor.setVisible(true);
-                                    //((JFrame) SwingUtilities.getWindowAncestor(ingresarButton)).dispose();
                                 }
                                 else{
-                                    JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
+                                    throw new Exception("Credenciales Incorrectas");
                                 }
                                 resultSet.close();
                                 statement.close();
                                 conexion.close();
                             }
-                            catch (SQLException exception){
+                            catch (Exception exception){
                                 JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");
                             }
                             break;
                     }
-                    connector.cerrarConexion(conexion);
+                }else{
+                    advertencia.setText("Ingrese sus credenciales");
                 }
             }
-
+        });
+        salirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
         });
     }
 }

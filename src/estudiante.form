@@ -25,6 +25,7 @@
             </constraints>
             <properties>
               <background color="-9531996"/>
+              <foreground color="-16777216"/>
             </properties>
             <border type="none"/>
             <children>
@@ -56,6 +57,11 @@
                     </constraints>
                     <properties>
                       <background color="-2500135"/>
+                      <caretColor color="-16777216"/>
+                      <disabledTextColor color="-16777216"/>
+                      <editable value="false"/>
+                      <enabled value="false"/>
+                      <foreground color="-16777216"/>
                       <visible value="true"/>
                     </properties>
                   </component>
@@ -67,6 +73,10 @@
                     </constraints>
                     <properties>
                       <background color="-2500135"/>
+                      <caretColor color="-16777216"/>
+                      <disabledTextColor color="-16777216"/>
+                      <editable value="false"/>
+                      <enabled value="false"/>
                       <visible value="true"/>
                     </properties>
                   </component>
@@ -78,6 +88,10 @@
                     </constraints>
                     <properties>
                       <background color="-2500135"/>
+                      <caretColor color="-16777216"/>
+                      <disabledTextColor color="-16777216"/>
+                      <editable value="false"/>
+                      <enabled value="false"/>
                       <visible value="true"/>
                     </properties>
                   </component>
@@ -89,6 +103,10 @@
                     </constraints>
                     <properties>
                       <background color="-2500135"/>
+                      <caretColor color="-16777216"/>
+                      <disabledTextColor color="-16777216"/>
+                      <editable value="false"/>
+                      <enabled value="false"/>
                       <visible value="true"/>
                     </properties>
                   </component>
@@ -312,8 +330,7 @@
                         <properties>
                           <background color="-3416079"/>
                           <foreground color="-3416079"/>
-                          <icon value="img/imguser.png"/>
-                          <text value=""/>
+                          <text value="Cerrar Sesión"/>
                         </properties>
                       </component>
                     </children>

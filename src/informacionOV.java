@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 
 public class informacionOV {
     JPanel JPanelOV;
-    private JButton button1;
+    private JButton cerrarSesiónButton;
     private JRadioButton prácticasPreprofesionalesRadioButton;
     private JRadioButton a️PrácticasLaboralesRadioButton;
     private JTextField textField1;
@@ -29,17 +29,26 @@ public class informacionOV {
     private JLabel avance;
     private JLabel tiempo;
     private JRadioButton perfilRadioButton;
+    private JList parrafo_p;
 
     public informacionOV(String cambio){
-        Main.ventana.setTitle("Gestion De Proyectos");
+        Main.ventana.setTitle("Ofertas de Practicas y Vinculacion");
+
+        textField1.setText(Main.nombre);
+        textField2.setText(Main.facultad);
+        textField3.setText(Main.carrera);
+        textField4.setText(Main.periodo);
         switch (cambio){
             case "primero" -> {
                 titulo.setText("Desarrollador Jr");
                 subtitulo.setText("Crediprime S.A. ");
-                //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("Auxiliar en el desarrollo de una app movil para inmobiliaria");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Auxiliar en el desarrollo de una app movil para inmobiliaria");
+                parrafo_p.setModel(contenedorPa);
+
+
+
                 requisitos_p.setText("• Título de tercer nivel en Ingeniería en Software, Programación  o afines");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Infraestructura Backend y Frontend.");
@@ -62,7 +71,12 @@ public class informacionOV {
             case "segundo" -> {
                 titulo.setText("ANALISTA DE DESARROLLO");
                 subtitulo.setText("ORIGINARSA S.A");
-                parrafo_d.setText("Evaluación y mejora de procesos relacionados con el desarrollo \nde software. ");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Evaluación y mejora de procesos relacionados con el desarrollo");
+                contenedorPa.addElement(" de software.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Tecnología, Sistemas y Telecomunicaciones");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Gestión en bases de datos, Infraestructura básica.");
@@ -86,7 +100,13 @@ public class informacionOV {
             case "tercero" -> {
                 titulo.setText("Practicante de Ciencia de Datos");
                 subtitulo.setText("OMARSA corp");
-                parrafo_d.setText("Participación en proyectos de ciencia de datos, analítica y aprendizaje\n automático. Oportunidad de aprender Python, R y las últimas técnicas de IA.");
+
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Participación en proyectos de ciencia de datos, analítica y ");
+                contenedorPa.addElement("  automático. Oportunidad de aprender Python, R y las últimas");
+                contenedorPa.addElement("  técnicas de IA.");
+                parrafo_p.setModel(contenedorPa);
 
                 requisitos_p.setText("Estudiante de carreras como Ingeniería de Sistemas.");
                 //conocimiento_p.setText("Conocimientos de programación es deseable.");
@@ -109,7 +129,12 @@ public class informacionOV {
             case "cuarta" -> {
                 titulo.setText("Practicante de Ciberseguridad");
                 subtitulo.setText("Staff Sotware Engineer");
-                parrafo_d.setText("Apoyo en tareas de monitoreo, detección y respuesta a incidentes de\n seguridad.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Apoyo en tareas de monitoreo, detección y respuesta a incidentes");
+                contenedorPa.addElement("  seguridad.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("•Estudiante de Ingeniería de Sistemas o carreras afines.");
                 //conocimiento_p.setText("Conocimientos de redes y seguridad informática.");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -132,7 +157,12 @@ public class informacionOV {
             case "quinta" -> {
                 titulo.setText("Practicante de Desarrollo de Software");
                 subtitulo.setText("METEL");
-                parrafo_d.setText("Participación en el desarrollo de software de la empresa. Oportunidad de\n aprender metodologías ágiles y trabajo en equipo.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Participación en el desarrollo de software de la empresa,");
+                contenedorPa.addElement("  oportunidades de aprender metodologías ágiles y trabajo en equipo.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Estudiante universitario de Ingeniería de Sistemas");
                 //conocimiento_p.setText("Conocimientos de programación (Java, Python u otros)");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -154,7 +184,16 @@ public class informacionOV {
             case "sexta" -> {
                 titulo.setText("Practicante de Testing de Software");
                 subtitulo.setText("HandTree Consultancy");
-                parrafo_d.setText("Participar en las pruebas de software desarrollado en la empresa.\n Oportunidad de aprender testing manual y automatizado.");
+
+                DefaultListModel contenedor= new DefaultListModel();
+                contenedor.addElement("• Participar en las pruebas de software desarrollado en la empresa,");
+                contenedor.addElement("  oportunidad de aprender testing manual y automatizado.");
+                conocimiento_p.setModel(contenedor);
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Oportunidad de aprender testing manual y automatizado.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
                 //conocimiento_p.setText("Conocimientos de testing es deseable");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -177,7 +216,11 @@ public class informacionOV {
             case "septimo" -> {
                 titulo.setText("Practicante de Base de Datos");
                 subtitulo.setText("Punto Net");
-                parrafo_d.setText("Participación en tareas de administración de bases de datos de la\n empresa. Oportunidad de aprender SQL, NoSQL y modelado de datos.");
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Participación en tareas de administración de bases de datos de la empresa.");
+                contenedorPa.addElement("  Oportunidad de aprender SQL, NoSQL y modelado de datos.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Estudiante de tecnologia en desarrollo de softaware");
                 //conocimiento_p.setText("Conocimientos de bases de datos es deseable");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -199,7 +242,13 @@ public class informacionOV {
             case "octavo" -> {
                 titulo.setText("Practicante de Redes y Seguridad Informática");
                 subtitulo.setText("QualityUp");
-                parrafo_d.setText("Apoyo en tareas de administración de redes y seguridad informática.\n Oportunidad de aprender sobre redes TCP/IP, firewalls, VPNs, etc.");
+                parrafo_d.setText(" Oportunidad de aprender sobre redes TCP/IP, firewalls, VPNs, etc.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Apoyo en tareas de administración de redes y seguridad informática.");
+                contenedorPa.addElement("  Oportunidad de aprender sobre redes TCP/IP, firewalls, VPNs, etc.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Estudiante de tecnologia en desarrollo de softaware");
                 //conocimiento_p.setText("Conocimientos de redes es deseable");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -220,7 +269,14 @@ public class informacionOV {
             case "noveno" -> {
                 titulo.setText("Practicante de Innovación y Emprendimiento Digital");
                 subtitulo.setText("human brand S.A.");
-                parrafo_d.setText("Participación en proyectos de innovación tecnológica y emprendimiento.\n Oportunidad de aprender metodologías ágiles, diseño de productos digitales, validación de ideas, etc.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Participación en proyectos de innovación tecnológica y emprendimiento.");
+                contenedorPa.addElement("  Oportunidad de aprender metodologías ágiles, diseño de productos");
+                contenedorPa.addElement("  digitalees, validación de ideas, etc.");
+                parrafo_p.setModel(contenedorPa);
+
+
                 requisitos_p.setText("• Estudiante de tecnologia desarrollo de software/ redes.");
                 //conocimiento_p.setText("Proactividad, creatividad y estar al día con las últimas tendencias \ndigitales.");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -252,6 +308,13 @@ public class informacionOV {
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
                 Main.ventana.validate();
+            }
+        });
+        cerrarSesiónButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new login().loginJPanel);
+                Main.ventana.revalidate();
             }
         });
     };

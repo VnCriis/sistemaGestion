@@ -25,8 +25,13 @@ public class estudiantesOL {
     private JRadioButton perfilRadioButton;
     //private JButton button1;
 
+
     public estudiantesOL() {
         Main.ventana.setTitle("Gestion De Proyectos");
+        textField1.setText(Main.nombre);
+        textField2.setText(Main.facultad);
+        textField3.setText(Main.carrera);
+        textField4.setText(Main.periodo);
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -35,6 +40,7 @@ public class estudiantesOL {
 
             }
         });
+
         verMasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

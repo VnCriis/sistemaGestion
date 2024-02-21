@@ -109,6 +109,10 @@
                 </constraints>
                 <properties>
                   <background color="-2500135"/>
+                  <caretColor color="-16777216"/>
+                  <disabledTextColor color="-16777216"/>
+                  <editable value="false"/>
+                  <enabled value="false"/>
                 </properties>
               </component>
               <component id="7124b" class="javax.swing.JTextField" binding="textField2" default-binding="true">
@@ -119,6 +123,10 @@
                 </constraints>
                 <properties>
                   <background color="-2500135"/>
+                  <caretColor color="-16777216"/>
+                  <disabledTextColor color="-16777216"/>
+                  <editable value="false"/>
+                  <enabled value="false"/>
                 </properties>
               </component>
               <component id="3c745" class="javax.swing.JTextField" binding="textField3" default-binding="true">
@@ -129,6 +137,10 @@
                 </constraints>
                 <properties>
                   <background color="-2500135"/>
+                  <caretColor color="-16777216"/>
+                  <disabledTextColor color="-16777216"/>
+                  <editable value="false"/>
+                  <enabled value="false"/>
                 </properties>
               </component>
               <component id="1c2a2" class="javax.swing.JTextField" binding="textField4" default-binding="true">
@@ -139,6 +151,10 @@
                 </constraints>
                 <properties>
                   <background color="-2500135"/>
+                  <caretColor color="-16777216"/>
+                  <disabledTextColor color="-16777216"/>
+                  <editable value="false"/>
+                  <enabled value="false"/>
                   <foreground color="-2500135"/>
                 </properties>
               </component>
@@ -213,8 +229,7 @@
                 <properties>
                   <background color="-3416079"/>
                   <foreground color="-3416079"/>
-                  <icon value="img/imguser.png"/>
-                  <text value=""/>
+                  <text value="Cerrar Sesión"/>
                 </properties>
               </component>
             </children>
