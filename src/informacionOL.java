@@ -318,5 +318,12 @@ public class informacionOL {
                 Main.ventana.revalidate();
             }
         });
+        aplicarAhoraButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new formulario().formularioJPanel);
+                Main.ventana.revalidate();
+            }
+        });
     };
 }
