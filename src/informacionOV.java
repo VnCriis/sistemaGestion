@@ -196,7 +196,7 @@ public class informacionOV {
 
                 requisitos_p.setText("• Estudiante universitario de Ingeniería de Sistemas o carreras afines.");
                 //conocimiento_p.setText("Conocimientos de testing es deseable");
-                DefaultListModel contenedor= new DefaultListModel();
+                contenedor = new DefaultListModel();
                 contenedor.addElement("• Conocimientos de testing es deseable");
                 conocimiento_p.setModel(contenedor);
 

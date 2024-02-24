@@ -149,15 +149,25 @@ public class login {
                                 statement.setString(2, String.valueOf(contraseña));
                                 ResultSet resultSet = statement.executeQuery();
                                 if (resultSet.next()) {
+                                    int idEstudiante = resultSet.getInt("id");
+                                    String consulta = "SELECT * FROM listatutores WHERE id_tutor = "+idEstudiante;
+                                    Statement statement2 = conexion.createStatement();
+                                    ResultSet resultSet2 = statement.executeQuery(consulta);
+                                    resultSet2.next();
+                                    Main.nombre2 = resultSet2.getString("nombre");
+                                    Main.facultad2 = resultSet2.getString("facultad");
+                                    Main.periodo2= resultSet2.getString("periodo");
+
                                     Main.ventana.setContentPane(new tutor().tutorJPanel);
                                     Main.ventana.revalidate();
+                                    resultSet2.close();
+                                    statement2.close();
+                                    resultSet.close();
+                                    statement.close();
+                                    conexion.close();
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "No se encontró información del estudiante en listaestudiantes");
                                 }
-                                else{
-                                    throw new Exception("Credenciales Incorrectas");
-                                }
-                                resultSet.close();
-                                statement.close();
-                                conexion.close();
                             }
                             catch (Exception exception){
                                 JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrecto");

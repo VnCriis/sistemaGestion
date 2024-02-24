@@ -3,6 +3,7 @@ import javax.swing.*;
 public class Main {
     static JFrame ventana = new JFrame("Gestion de Proyectos");
     static String nombre, facultad, carrera, periodo;
+    static String nombre2, facultad2, periodo2;
     static int codigoUnico, cedula;
     public static void main(String[] args) {
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
