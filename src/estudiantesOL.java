@@ -20,9 +20,9 @@ public class estudiantesOL {
     private JButton verMasButton6;
     private JButton verMasButton7;
     private JButton verMasButton8;
-    private JRadioButton radioButton1;
     private JRadioButton radioButton2;
     private JRadioButton perfilRadioButton;
+    private JRadioButton radioButton1;
     //private JButton button1;
 
 

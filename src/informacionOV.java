@@ -6,7 +6,6 @@ public class informacionOV {
     JPanel JPanelOV;
     private JButton cerrarSesiónButton;
     private JRadioButton prácticasPreprofesionalesRadioButton;
-    private JRadioButton a️PrácticasLaboralesRadioButton;
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
@@ -30,6 +29,8 @@ public class informacionOV {
     private JLabel tiempo;
     private JRadioButton perfilRadioButton;
     private JList parrafo_p;
+    private JRadioButton radioButton1;
+    private JRadioButton radioButton2;
 
     public informacionOV(String cambio){
         Main.ventana.setTitle("Ofertas de Practicas y Vinculacion");

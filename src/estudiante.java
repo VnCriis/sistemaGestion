@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
-import java.sql.*;
+
 public class estudiante {
     JPanel estudianteJPanel;
     private JRadioButton radioButton1;
@@ -14,7 +12,7 @@ public class estudiante {
     private JTextField textField3;
     private JTextField textField4;
     private JButton button1;
-    private JRadioButton perfilRadioButton;
+    private JRadioButton radioButton3;
 
 
 
@@ -41,10 +39,20 @@ public class estudiante {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Main.ventana.setContentPane(new login().loginJPanel);
-                Main.ventana.revalidate();
+                int opcion = JOptionPane.showConfirmDialog(Main.ventana, "¿Está seguro que desea salir?", "Confirmar salida", JOptionPane.OK_CANCEL_OPTION);
+                if (opcion == JOptionPane.OK_OPTION){
+                    Main.ventana.setContentPane(new login().loginJPanel);
+                    Main.ventana.revalidate();
+                }
             }
         });
 
+        radioButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new informacion_estudiante().infoEstudiante);
+                Main.ventana.revalidate();
+            }
+        });
     }
 }

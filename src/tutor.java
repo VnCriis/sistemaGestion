@@ -24,5 +24,15 @@ public class tutor {
                 Main.ventana.revalidate();
             }
         });
+        cerrarSesiónButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int opcion = JOptionPane.showConfirmDialog(Main.ventana, "¿Está seguro que desea salir?", "Confirmar salida", JOptionPane.OK_CANCEL_OPTION);
+                if (opcion == JOptionPane.OK_OPTION){
+                    Main.ventana.setContentPane(new login().loginJPanel);
+                    Main.ventana.revalidate();
+                }
+            }
+        });
     }
 }

@@ -9,7 +9,6 @@ public class estudianteOV {
     private JTextField textField2;
     private JTextField textField3;
     private JTextField textField4;
-    private JRadioButton prácticasPreprofesionalesRadioButton;
     private JRadioButton a️PrácticasLaboralesRadioButton;
     private JRadioButton perfilRadioButton;
     private JButton verMasButton1;
@@ -21,6 +20,8 @@ public class estudianteOV {
     private JButton verMasButton7;
     private JButton verMasButton8;
     private JButton verMasButton9;
+    private JRadioButton radioButton1;
+    private JRadioButton radioButton2;
 
     public estudianteOV() {
         Main.ventana.setTitle("Gestion De Proyectos");
@@ -94,7 +95,7 @@ public class estudianteOV {
                 Main.ventana.revalidate();
             }
         });
-        a️PrácticasLaboralesRadioButton.addActionListener(new ActionListener() {
+        radioButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Main.ventana.setContentPane(new estudiantesOL().olJPanel);

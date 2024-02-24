@@ -11,7 +11,6 @@ public class informacion_estudiante {
     private JTextField textField4;
     private JRadioButton radioButton1;
     private JRadioButton radioButton2;
-    private JRadioButton perfilRadioButton;
     private JButton button1;
     private JTextField cedula;
     private JTextField codigo_unico;
@@ -20,6 +19,7 @@ public class informacion_estudiante {
     private JTextField facultad;
     private JTextField carrera;
     private JTextField periodo;
+    private JRadioButton perfilRadioButton;
 
     public informacion_estudiante(){
         textField1.setText(Main.nombre);
@@ -49,7 +49,7 @@ public class informacion_estudiante {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Main.ventana.setContentPane(new login().loginJPanel);
+                Main.ventana.setContentPane(new estudiante().estudianteJPanel);
                 Main.ventana.revalidate();
             }
         });

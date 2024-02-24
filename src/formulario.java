@@ -14,6 +14,7 @@ public class formulario {
     private JTextField textField4;
     private JButton button1;
     private JButton button2;
+    private JButton button3;
 
     public formulario() {
         Main.ventana.setTitle("Gestion De Proyectos");
@@ -25,7 +26,8 @@ public class formulario {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    // Especificar la ubicación del archivo de documento existente
+                    // Especificar la ubicMain.ventana.setContentPane(new estudiante().estudianteJPanel);
+                    //                Main.ventana.revalidate();
                     File file = new File("C:/Users/cusin/IdeaProjects//sistemaGestion/src/doc/solicitud.docx");
 
                     // Verificar si el archivo existe antes de intentar descargarlo
@@ -53,6 +55,13 @@ public class formulario {
                     String filePath = fileChooser.getSelectedFile().getPath();
                     System.out.println("Archivo seleccionado: " + filePath);
                 }
+            }
+        });
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new estudiante().estudianteJPanel);
+                Main.ventana.revalidate();
             }
         });
     }

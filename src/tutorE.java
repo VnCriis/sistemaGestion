@@ -1,5 +1,7 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class tutorE {
@@ -9,6 +11,7 @@ public class tutorE {
     private JTextField textField3;
     private JTable table1;
     private JRadioButton radioButton1;
+    private JButton button1;
 
     public tutorE() {
         Main.ventana.setTitle("Gestion De Proyectos");
@@ -48,6 +51,13 @@ public class tutorE {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.ventana.setContentPane(new tutor().tutorJPanel);
+                Main.ventana.revalidate();
+            }
+        });
     }
 
 }
