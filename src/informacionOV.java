@@ -218,7 +218,7 @@ public class informacionOV {
                 titulo.setText("Practicante de Base de Datos");
                 subtitulo.setText("Punto Net");
                 DefaultListModel contenedorPa= new DefaultListModel();
-                contenedorPa.addElement("• Participación en tareas de administración de bases de datos de la empresa.");
+                contenedorPa.addElement("• Participación en tareas de administración de bases de datos");
                 contenedorPa.addElement("  Oportunidad de aprender SQL, NoSQL y modelado de datos.");
                 parrafo_p.setModel(contenedorPa);
 

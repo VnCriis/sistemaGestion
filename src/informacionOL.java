@@ -30,6 +30,7 @@ public class informacionOL {
     private JLabel avance;
     private JLabel tiempo;
     private JRadioButton perfilRadioButton;
+    private JList parrafo_p;
 
     public informacionOL(String cambio){
         Main.ventana.setTitle("Gestion De Proyectos");
@@ -41,10 +42,12 @@ public class informacionOL {
             case "primero" -> {
                 titulo.setText("Asistente De Sistemas");
                 subtitulo.setText("SERVICAT - PARTESCAT COMPAÑIA LIMITADA");
-                //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("Brindar Soporte oportuno de primer y segundo nivel a clientes internos.");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Brindar Soporte oportuno de primer y segundo nivel a clientes internos.");
+                parrafo_p.setModel(contenedorPa);
+
+
                 requisitos_p.setText("• Ingeniero o Egresado en Sistemas");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Conocimiento de Cyberseguridad.");
@@ -69,8 +72,14 @@ public class informacionOL {
             case "segundo" -> {
                 titulo.setText("Supervisor De Produccion");
                 subtitulo.setText("NOVACERO");
-                parrafo_d.setText("Supervisar que se cumpla con las guías y métodos de trabajo para garantizar " +
-                        "la operatividad de maquinas y evitar accidentes");
+
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Supervisar que se cumpla con las guías y métodos de trabajo para");
+                contenedorPa.addElement("  garantizar la operatividad de maquinas y evitar accidentes");
+                parrafo_p.setModel(contenedorPa);
+
+
                 requisitos_p.setText("• Tecnologia Superior De Agua y Saniamiento");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Procesos de producción");
@@ -94,10 +103,20 @@ public class informacionOL {
             case "tercero" -> {
                 titulo.setText("Experto Calidad TI(Quality Assurance)");
                 subtitulo.setText("BANCO PICHINCHA");
-                //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("• Planificar, monitorear y dar seguimiento al proceso de aseguramiento y control de calidad utilizado en todo el ciclo de vida de construcción de soluciones tecnológicas, control de métricas de cumplimiento de los lineamientos de calidad, alineación del plan de pruebas, planes de mejora continua del proceso, acompañamiento a los equipos de QA así como el monitoreo de demanda y distribución de cargas entre la tribu/squad asignado, con el fin de contribuir al cumplimiento y alineación del proceso de aseguramiento y control de calidad de software, mejora de tiempos, nivel de servicio y eficiencias de entrega de soluciones al negocio, de acuerdo a las estrategia definida por el Chapter de QA.");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
+
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Planificar, monitorear y dar seguimiento al proceso de aseguramiento");
+                contenedorPa.addElement("  y control de calidad utilizado en todo el ciclo de vida de construcción");
+                contenedorPa.addElement("  de soluciones tecnológicas, control de métricas de cumplimiento de los");
+                contenedorPa.addElement("  lineamientos de calidad, alineación del plan de pruebas, planes de mejora");
+                contenedorPa.addElement("  continua del proceso, acompañamiento a los equipos de QA así como");
+                contenedorPa.addElement("  monitoreo de demanda y distribución de cargas entre la tribu/squad ");
+                contenedorPa.addElement("  con el fin de contribuir al cumplimiento y alineación del proceso.");
+                contenedorPa.addElement("  ");
+                parrafo_p.setModel(contenedorPa);
+
+
                 requisitos_p.setText("• Tecnologia Sistemas yy Telecomunicaciones");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Manejo de herramientas en gestión de proyectos y pruebas.");
@@ -123,10 +142,12 @@ public class informacionOL {
             case "cuarto" -> {
                 titulo.setText("Tecnico De Seguridad y Salud Ocupacional");
                 subtitulo.setText("CORIS DEL ECUADOR");
-                //descripcion.setText("Descripcion del puesto");
-                parrafo_d.setText("Levantamiento de matrices de riesgos, planes de emergencia, contingencia, políticas y procedimientos del subsistema de SSO.");
-                //requisitos.setText("Requisitos");
-                //textFormacionA.setText("Formacion Academica:");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Levantamiento de matrices de riesgos, planes de emergencia,");
+                contenedorPa.addElement("  contingencia, políticas y procedimientos del subsistema de SSO.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("• Tecnologia Sistemas y Telecomunicaciones");
                 DefaultListModel contenedor= new DefaultListModel();
                 contenedor.addElement("• Credibilidad técnica");
@@ -154,8 +175,14 @@ public class informacionOL {
             case "quinto" -> {
                 titulo.setText("Analista De Desarrollo");
                 subtitulo.setText("ORIGINARSA S.A");
-                parrafo_d.setText("* Evaluación y mejora de procesos relacionados con el desarrollo de software.\n" +
-                        "Papel crucial en la planificación, diseño, implementación y mejora continua de soluciones de software, asegurando que cumplan con los requisitos del negocio y se desarrollen de manera eficiente y efectiva.");
+
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Evaluación y mejora de procesos relacionados con el desarrollo,");
+                contenedorPa.addElement("  de software implementación y mejora continua de soluciones");
+                contenedorPa.addElement("  de software, asegurando que cumplan con los requisitos del ");
+                contenedorPa.addElement("  negocio y se desarrollen de manera eficiente y efectiva.");
+                parrafo_p.setModel(contenedorPa);
 
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
@@ -184,8 +211,12 @@ public class informacionOL {
             case "sexto" -> {
                 titulo.setText("Analista De Desarrollo");
                 subtitulo.setText("IMPROVE-INFORMATION-TECHNOLOGIES CIA.LTDA");
-                parrafo_d.setText("* Evaluación y mejora de procesos relacionados con el desarrollo de software.\n" +
-                        "Papel crucial en la planificación, diseño, implementación y mejora continua de soluciones de software, asegurando que cumplan con los requisitos del negocio y se desarrollen de manera eficiente y efectiva.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Evaluación y mejora de procesos relacionados con el desarrollo");
+                contenedorPa.addElement("  de software ");
+                parrafo_p.setModel(contenedorPa);
+
 
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -214,9 +245,13 @@ public class informacionOL {
             case "septimo" -> {
                 titulo.setText("Staff Software Engineer");
                 subtitulo.setText("STAFFING");
-                parrafo_d.setText("* Staff Software Engineer Estamos buscando un Staff Full-Stack Engineer experimentado " +
-                        "y creativo para unirse a nuestro creciente equipo " +
-                        "de servicios de integración y ayudar a llevar nuestra empresa al siguiente nivel..");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Staff Software Engineer Estamos buscando un Staff Full-Stack");
+                contenedorPa.addElement("  Engineer experimentado y creativo para unirse a nuestro creciente");
+                contenedorPa.addElement("  equipo de servicios de integración y ayudar a llevar nuestra");
+                contenedorPa.addElement("  empresa al siguiente nivel.");
+                parrafo_p.setModel(contenedorPa);
 
                 requisitos_p.setText("* Tecnologia en Desarrollo de Software");
                 DefaultListModel contenedor= new DefaultListModel();
@@ -242,8 +277,11 @@ public class informacionOL {
             case "octava" -> {
                 titulo.setText("Pasante Sistemas");
                 subtitulo.setText("PUNTONET");
-                parrafo_d.setText("* Dar apoyo al área de sistemas en base a los requerimientos " +
-                        "solicitados por los clientes internos..");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Dar apoyo al área de sistemas en base a los requerimientos");
+                contenedorPa.addElement("  solicitados por los clientes internos.");
+                parrafo_p.setModel(contenedorPa);
 
                 requisitos_p.setText("* Tecnologia en Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
@@ -268,7 +306,11 @@ public class informacionOL {
             case "novena" -> {
                 titulo.setText("Centric - Passante de Sistemas");
                 subtitulo.setText("CASABACA S.A.");
-                parrafo_d.setText("* Apoyar en los procesos operativos del área.");
+
+                DefaultListModel contenedorPa= new DefaultListModel();
+                contenedorPa.addElement("• Apoyar en los procesos operativos del área.");
+                parrafo_p.setModel(contenedorPa);
+
                 requisitos_p.setText("* Tecnologia Sistemas y Telecomunicaciones");
                 //textConocimientoAd.setText("Conocimietnos Adicionales:");
                 DefaultListModel contenedor= new DefaultListModel();
